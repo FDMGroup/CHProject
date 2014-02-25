@@ -12,3 +12,5 @@ As NE01 allows for a company to remove the Limited part of their company name, i
 Once a company name and id have been confirmed with the database an image will be pulled from google images, this will be their company logo - this is where we will implement non-blocking. If we have time later on we may implement a confirmation of change of name via email.
 
 The first step for this website will be to create a form to confirm an existing company name and id.
+
+Confirmation of checking in work from git to github!
