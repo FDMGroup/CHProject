@@ -1,0 +1,12 @@
+[Thu Feb 27 17:04:18 2014] [info] Listening at "http://*:3000".
+[Thu Feb 27 17:04:25 2014] [debug] Your secret passphrase needs to be changed!!!
+[Thu Feb 27 17:04:25 2014] [debug] GET "/".
+[Thu Feb 27 17:04:25 2014] [debug] Routing to controller "CHProject::Example" and action "welcome".
+[Thu Feb 27 17:04:25 2014] [debug] Rendering template "example/welcome.html.ep".
+[Thu Feb 27 17:04:25 2014] [debug] Rendering template "layouts/default.html.ep".
+[Thu Feb 27 17:04:25 2014] [debug] 200 OK (0.060466s, 16.538/s).
+[Thu Feb 27 17:04:29 2014] [debug] GET "/".
+[Thu Feb 27 17:04:29 2014] [debug] Routing to controller "CHProject::Example" and action "welcome".
+[Thu Feb 27 17:04:29 2014] [debug] Rendering cached template "example/welcome.html.ep".
+[Thu Feb 27 17:04:29 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Thu Feb 27 17:04:29 2014] [debug] 200 OK (0.004356s, 229.568/s).

@@ -1,0 +1,19 @@
+#! /usr/bin/perl
+package CHProject::Controller::ChangeName;
+use Mojo::Base 'Mojolicious::Controller';
+
+sub changeName {
+	my $self = @_;
+	if ($self->req->method eq 'POST'){
+		$self->render_later;
+
+		my $company = {
+			oldName => $self->param('company_name'),
+			id => $self->param('company_id'),
+			newName => $self->param('new_name')
+		};
+
+		$self->redirect_to("summary");
+		return;
+	}
+}
