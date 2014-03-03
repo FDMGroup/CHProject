@@ -1,19 +1,30 @@
 #! /usr/bin/perl
+use strict;
 package CHProject::Controller::ChangeName;
 use Mojo::Base 'Mojolicious::Controller';
+use Mango;
+use Mango::BSON qw/ bson_ts /;
 
-sub changeName {
-	my $self = @_;
+sub changeName{
+	my ($self) = @_;
+
 	if ($self->req->method eq 'POST'){
 		$self->render_later;
 
-		my $company = {
-			oldName => $self->param('company_name'),
-			id => $self->param('company_id'),
-			newName => $self->param('new_name')
+		$CHProject::company {
+			oldName=>$self->param('company_name'));
+			id => $self->param('company_id'));
+			newName => $self->param('new_name'));
 		};
 
-		$self->redirect_to("summary");
-		return;
+		my($oldName, $id, $newName) = @_;	
+
 	}
+	$self->redirect_to('/summary');
 }
+
+__DATA__
+@@ summary.html.ep
+%= $oldName
+%= $id
+%= $newName

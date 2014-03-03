@@ -1,0 +1,16 @@
+%layout 'default';
+%title 'Summary';
+
+<div class = "container">
+	<div class = "page-header">
+		<h1>Summary of Changes</h1>
+
+		<p class = "lead"><span class = "glyphicon glyphicon-ok"></span></p>
+
+		<p> Company ID: <%= $CHProject::company->{id} %></p>
+		<p> Company Name: <%= $company->{oldname} %></p>
+		<p> </p>
+
+		<p> You want to change the name to: <%= $company->{newName} %></p>
+	</div>
+</div>

@@ -10,3 +10,1261 @@
 [Thu Feb 27 17:04:29 2014] [debug] Rendering cached template "example/welcome.html.ep".
 [Thu Feb 27 17:04:29 2014] [debug] Rendering cached template "layouts/default.html.ep".
 [Thu Feb 27 17:04:29 2014] [debug] 200 OK (0.004356s, 229.568/s).
+[Sun Mar  2 17:21:30 2014] [info] Listening at "http://*:3000".
+[Sun Mar  2 17:21:53 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Mar  2 17:21:53 2014] [debug] GET "/".
+[Sun Mar  2 17:21:53 2014] [debug] Routing to controller "CHProject::Example" and action "welcome".
+[Sun Mar  2 17:21:53 2014] [debug] Rendering template "example/welcome.html.ep".
+[Sun Mar  2 17:21:53 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Mar  2 17:21:53 2014] [debug] 200 OK (0.177980s, 5.619/s).
+[Sun Mar  2 17:29:15 2014] [info] Listening at "http://*:3000".
+[Sun Mar  2 17:29:17 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Mar  2 17:29:17 2014] [debug] GET "/".
+[Sun Mar  2 17:29:17 2014] [debug] Routing to controller "CHProject::Example" and action "welcome".
+[Sun Mar  2 17:29:17 2014] [debug] Rendering template "example/welcome.html.ep".
+[Sun Mar  2 17:29:18 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Mar  2 17:29:18 2014] [debug] 200 OK (0.034991s, 28.579/s).
+[Sun Mar  2 17:29:19 2014] [debug] GET "/changeOfName".
+[Sun Mar  2 17:29:19 2014] [debug] Controller "CHProject::Controller::Summary" does not exist.
+[Sun Mar  2 17:29:19 2014] [debug] Rendering template "summary/summary.html.ep".
+[Sun Mar  2 17:29:19 2014] [error] Global symbol "$company" requires explicit package name at template summary/summary.html.ep line 10.
+Global symbol "$company" requires explicit package name at template summary/summary.html.ep line 11.
+Global symbol "$company" requires explicit package name at template summary/summary.html.ep line 14.
+5: 	<div class = "page-header">
+6: 		<h1>Summary of Changes</h1>
+7: 
+8: 		<p class = "lead"><span class = "glyphicon glyphicon-ok"></span></p>
+9: 
+10: 		<p> Company ID: <%= $company->{id} %></p>
+11: 		<p> Company Name: <%= $company->{oldName} %></p>
+12: 		<p> </p>
+13: 
+14: 		<p> You want to change the name to: <%= $company->{newName} %></p>
+15: 	</div>
+
+[Sun Mar  2 17:29:19 2014] [debug] Template "exception.development.html.ep" not found.
+[Sun Mar  2 17:29:19 2014] [debug] Template "exception.html.ep" not found.
+[Sun Mar  2 17:29:19 2014] [debug] Rendering inline template "b260ba41ebf72d49075cbbc0f6086768".
+[Sun Mar  2 17:29:19 2014] [debug] Rendering inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Mar  2 17:29:19 2014] [debug] 500 Internal Server Error (0.081681s, 12.243/s).
+[Sun Mar  2 18:10:33 2014] [info] Listening at "http://*:3000".
+[Sun Mar  2 18:45:02 2014] [info] Listening at "http://*:3000".
+[Sun Mar  2 18:45:05 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Mar  2 18:45:05 2014] [debug] GET "/".
+[Sun Mar  2 18:45:05 2014] [debug] Routing to controller "CHProject::Example" and action "welcome".
+[Sun Mar  2 18:45:05 2014] [debug] Rendering template "example/welcome.html.ep".
+[Sun Mar  2 18:45:05 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Mar  2 18:45:05 2014] [debug] 200 OK (0.034752s, 28.775/s).
+[Sun Mar  2 18:45:09 2014] [debug] GET "/changeOfName".
+[Sun Mar  2 18:45:09 2014] [debug] Controller "CHProject::Controller::Summary" does not exist.
+[Sun Mar  2 18:45:09 2014] [debug] Rendering template "summary/summary.html.ep".
+[Sun Mar  2 18:45:09 2014] [error] Global symbol "$company" requires explicit package name at template summary/summary.html.ep line 10.
+Global symbol "$company" requires explicit package name at template summary/summary.html.ep line 11.
+Global symbol "$company" requires explicit package name at template summary/summary.html.ep line 14.
+5: 	<div class = "page-header">
+6: 		<h1>Summary of Changes</h1>
+7: 
+8: 		<p class = "lead"><span class = "glyphicon glyphicon-ok"></span></p>
+9: 
+10: 		<p> Company ID: <%= $company->{id} %></p>
+11: 		<p> Company Name: <%= $company->{oldName} %></p>
+12: 		<p> </p>
+13: 
+14: 		<p> You want to change the name to: <%= $company->{newName} %></p>
+15: 	</div>
+
+[Sun Mar  2 18:45:09 2014] [debug] Template "exception.development.html.ep" not found.
+[Sun Mar  2 18:45:09 2014] [debug] Template "exception.html.ep" not found.
+[Sun Mar  2 18:45:09 2014] [debug] Rendering inline template "b260ba41ebf72d49075cbbc0f6086768".
+[Sun Mar  2 18:45:09 2014] [debug] Rendering inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Mar  2 18:45:09 2014] [debug] 500 Internal Server Error (0.051787s, 19.310/s).
+[Sun Mar  2 22:14:00 2014] [info] Listening at "http://*:3000".
+[Sun Mar  2 22:14:08 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Mar  2 22:14:08 2014] [debug] GET "/".
+[Sun Mar  2 22:14:08 2014] [debug] Routing to controller "CHProject::Example" and action "welcome".
+[Sun Mar  2 22:14:08 2014] [debug] Rendering template "example/welcome.html.ep".
+[Sun Mar  2 22:14:08 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Mar  2 22:14:08 2014] [debug] 200 OK (0.034694s, 28.823/s).
+[Sun Mar  2 22:14:10 2014] [debug] GET "/changeOfName".
+[Sun Mar  2 22:14:11 2014] [debug] Controller "CHProject::Controller::Summary" does not exist.
+[Sun Mar  2 22:14:11 2014] [debug] Rendering template "summary/summary.html.ep".
+[Sun Mar  2 22:14:11 2014] [error] Global symbol "$company" requires explicit package name at template summary/summary.html.ep line 10.
+Global symbol "$company" requires explicit package name at template summary/summary.html.ep line 11.
+Global symbol "$company" requires explicit package name at template summary/summary.html.ep line 14.
+5: 	<div class = "page-header">
+6: 		<h1>Summary of Changes</h1>
+7: 
+8: 		<p class = "lead"><span class = "glyphicon glyphicon-ok"></span></p>
+9: 
+10: 		<p> Company ID: <%= $company->{id} %></p>
+11: 		<p> Company Name: <%= $company->{oldName} %></p>
+12: 		<p> </p>
+13: 
+14: 		<p> You want to change the name to: <%= $company->{newName} %></p>
+15: 	</div>
+
+[Sun Mar  2 22:14:11 2014] [debug] Template "exception.development.html.ep" not found.
+[Sun Mar  2 22:14:11 2014] [debug] Template "exception.html.ep" not found.
+[Sun Mar  2 22:14:11 2014] [debug] Rendering inline template "b260ba41ebf72d49075cbbc0f6086768".
+[Sun Mar  2 22:14:11 2014] [debug] Rendering inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Mar  2 22:14:11 2014] [debug] 500 Internal Server Error (0.062385s, 16.029/s).
+[Mon Mar  3 08:24:08 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 08:24:14 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 08:24:14 2014] [debug] GET "/changeOfName".
+[Mon Mar  3 08:24:14 2014] [debug] Controller "CHProject::Controller::Summary" does not exist.
+[Mon Mar  3 08:24:14 2014] [debug] Rendering template "summary/summary.html.ep".
+[Mon Mar  3 08:24:14 2014] [error] Global symbol "$company" requires explicit package name at template summary/summary.html.ep line 10.
+Global symbol "$company" requires explicit package name at template summary/summary.html.ep line 11.
+Global symbol "$company" requires explicit package name at template summary/summary.html.ep line 14.
+5: 	<div class = "page-header">
+6: 		<h1>Summary of Changes</h1>
+7: 
+8: 		<p class = "lead"><span class = "glyphicon glyphicon-ok"></span></p>
+9: 
+10: 		<p> Company ID: <%= $company->{id} %></p>
+11: 		<p> Company Name: <%= $company->{oldName} %></p>
+12: 		<p> </p>
+13: 
+14: 		<p> You want to change the name to: <%= $company->{newName} %></p>
+15: 	</div>
+
+[Mon Mar  3 08:24:14 2014] [debug] Template "exception.development.html.ep" not found.
+[Mon Mar  3 08:24:14 2014] [debug] Template "exception.html.ep" not found.
+[Mon Mar  3 08:24:14 2014] [debug] Rendering inline template "b260ba41ebf72d49075cbbc0f6086768".
+[Mon Mar  3 08:24:14 2014] [debug] Rendering inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Mon Mar  3 08:24:14 2014] [debug] 500 Internal Server Error (0.081348s, 12.293/s).
+[Mon Mar  3 09:09:46 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 09:09:49 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 09:09:49 2014] [debug] GET "/changeOfName".
+[Mon Mar  3 09:09:49 2014] [debug] Controller "CHProject::Controller::Summary" does not exist.
+[Mon Mar  3 09:09:49 2014] [debug] Rendering template "summary/summary.html.ep".
+[Mon Mar  3 09:09:49 2014] [error] Global symbol "$company" requires explicit package name at template summary/summary.html.ep line 11.
+Global symbol "$company" requires explicit package name at template summary/summary.html.ep line 14.
+6: 		<h1>Summary of Changes</h1>
+7: 
+8: 		<p class = "lead"><span class = "glyphicon glyphicon-ok"></span></p>
+9: 
+10: 		<p> Company ID: <%== $ChangeName::company->{id} %></p>
+11: 		<p> Company Name: <%== $company->{oldName} %></p>
+12: 		<p> </p>
+13: 
+14: 		<p> You want to change the name to: <%= $company->{newName} %></p>
+15: 	</div>
+16: </div>
+
+[Mon Mar  3 09:09:49 2014] [debug] Template "exception.development.html.ep" not found.
+[Mon Mar  3 09:09:49 2014] [debug] Template "exception.html.ep" not found.
+[Mon Mar  3 09:09:49 2014] [debug] Rendering inline template "b260ba41ebf72d49075cbbc0f6086768".
+[Mon Mar  3 09:09:49 2014] [debug] Rendering inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Mon Mar  3 09:09:49 2014] [debug] 500 Internal Server Error (0.170337s, 5.871/s).
+[Mon Mar  3 09:10:21 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 09:10:24 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 09:10:24 2014] [debug] GET "/changeOfName".
+[Mon Mar  3 09:10:24 2014] [debug] Controller "CHProject::Controller::Summary" does not exist.
+[Mon Mar  3 09:10:24 2014] [debug] Rendering template "summary/summary.html.ep".
+[Mon Mar  3 09:10:24 2014] [debug] Rendering template "layouts/default.html.ep".
+[Mon Mar  3 09:10:24 2014] [debug] 200 OK (0.040674s, 24.586/s).
+[Mon Mar  3 09:12:37 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 09:12:42 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 09:12:42 2014] [debug] GET "/".
+[Mon Mar  3 09:12:42 2014] [debug] Routing to controller "CHProject::Example" and action "welcome".
+[Mon Mar  3 09:12:42 2014] [debug] Rendering template "example/welcome.html.ep".
+[Mon Mar  3 09:12:42 2014] [debug] Rendering template "layouts/default.html.ep".
+[Mon Mar  3 09:12:42 2014] [debug] 200 OK (0.036707s, 27.243/s).
+[Mon Mar  3 09:12:44 2014] [debug] GET "/changeName.html".
+[Mon Mar  3 09:12:44 2014] [debug] Template "not_found.development.html.ep" not found.
+[Mon Mar  3 09:12:44 2014] [debug] Template "not_found.html.ep" not found.
+[Mon Mar  3 09:12:44 2014] [debug] Rendering inline template "b260ba41ebf72d49075cbbc0f6086768".
+[Mon Mar  3 09:12:44 2014] [debug] Rendering inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Mon Mar  3 09:12:44 2014] [debug] 404 Not Found (0.034371s, 29.094/s).
+[Mon Mar  3 09:17:55 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 09:17:57 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 09:17:57 2014] [debug] GET "/changeName.html".
+[Mon Mar  3 09:17:57 2014] [debug] Template "not_found.development.html.ep" not found.
+[Mon Mar  3 09:17:57 2014] [debug] Template "not_found.html.ep" not found.
+[Mon Mar  3 09:17:57 2014] [debug] Rendering inline template "b260ba41ebf72d49075cbbc0f6086768".
+[Mon Mar  3 09:17:57 2014] [debug] Rendering inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Mon Mar  3 09:17:57 2014] [debug] 404 Not Found (0.034604s, 28.898/s).
+[Mon Mar  3 09:18:00 2014] [debug] GET "/".
+[Mon Mar  3 09:18:00 2014] [debug] Routing to controller "CHProject::Example" and action "welcome".
+[Mon Mar  3 09:18:00 2014] [debug] Rendering template "example/welcome.html.ep".
+[Mon Mar  3 09:18:00 2014] [debug] Rendering template "layouts/default.html.ep".
+[Mon Mar  3 09:18:00 2014] [debug] 200 OK (0.013671s, 73.148/s).
+[Mon Mar  3 09:18:03 2014] [debug] GET "/changeName.html".
+[Mon Mar  3 09:18:03 2014] [debug] Template "not_found.development.html.ep" not found.
+[Mon Mar  3 09:18:03 2014] [debug] Template "not_found.html.ep" not found.
+[Mon Mar  3 09:18:03 2014] [debug] Rendering cached inline template "b260ba41ebf72d49075cbbc0f6086768".
+[Mon Mar  3 09:18:03 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Mon Mar  3 09:18:03 2014] [debug] 404 Not Found (0.013450s, 74.349/s).
+[Mon Mar  3 09:20:18 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 09:20:21 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 09:20:21 2014] [debug] GET "/changeName.html".
+[Mon Mar  3 09:20:21 2014] [debug] Template "not_found.development.html.ep" not found.
+[Mon Mar  3 09:20:21 2014] [debug] Template "not_found.html.ep" not found.
+[Mon Mar  3 09:20:21 2014] [debug] Rendering inline template "b260ba41ebf72d49075cbbc0f6086768".
+[Mon Mar  3 09:20:21 2014] [debug] Rendering inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Mon Mar  3 09:20:21 2014] [debug] 404 Not Found (0.038855s, 25.737/s).
+[Mon Mar  3 09:21:53 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 09:21:55 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 09:21:55 2014] [debug] GET "/changeName.html".
+[Mon Mar  3 09:21:55 2014] [debug] Template "not_found.development.html.ep" not found.
+[Mon Mar  3 09:21:55 2014] [debug] Template "not_found.html.ep" not found.
+[Mon Mar  3 09:21:55 2014] [debug] Rendering inline template "b260ba41ebf72d49075cbbc0f6086768".
+[Mon Mar  3 09:21:55 2014] [debug] Rendering inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Mon Mar  3 09:21:55 2014] [debug] 404 Not Found (0.034077s, 29.345/s).
+[Mon Mar  3 09:21:56 2014] [debug] GET "/changeName.html".
+[Mon Mar  3 09:21:56 2014] [debug] Template "not_found.development.html.ep" not found.
+[Mon Mar  3 09:21:56 2014] [debug] Template "not_found.html.ep" not found.
+[Mon Mar  3 09:21:56 2014] [debug] Rendering cached inline template "b260ba41ebf72d49075cbbc0f6086768".
+[Mon Mar  3 09:21:56 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Mon Mar  3 09:21:57 2014] [debug] 404 Not Found (0.012932s, 77.328/s).
+[Mon Mar  3 09:22:41 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 09:22:43 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 09:22:43 2014] [debug] GET "/changeName.html".
+[Mon Mar  3 09:22:43 2014] [debug] Template "not_found.development.html.ep" not found.
+[Mon Mar  3 09:22:43 2014] [debug] Template "not_found.html.ep" not found.
+[Mon Mar  3 09:22:43 2014] [debug] Rendering inline template "b260ba41ebf72d49075cbbc0f6086768".
+[Mon Mar  3 09:22:43 2014] [debug] Rendering inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Mon Mar  3 09:22:43 2014] [debug] 404 Not Found (0.093511s, 10.694/s).
+[Mon Mar  3 09:35:09 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 09:35:13 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 09:35:13 2014] [debug] GET "/".
+[Mon Mar  3 09:35:13 2014] [debug] Routing to controller "CHProject::Example" and action "welcome".
+[Mon Mar  3 09:35:13 2014] [debug] Rendering template "example/welcome.html.ep".
+[Mon Mar  3 09:35:13 2014] [debug] Rendering template "layouts/default.html.ep".
+[Mon Mar  3 09:35:13 2014] [debug] 200 OK (0.038928s, 25.688/s).
+[Mon Mar  3 09:35:15 2014] [debug] GET "/changeName.html".
+[Mon Mar  3 09:35:15 2014] [debug] Template "not_found.development.html.ep" not found.
+[Mon Mar  3 09:35:15 2014] [debug] Template "not_found.html.ep" not found.
+[Mon Mar  3 09:35:15 2014] [debug] Rendering inline template "b260ba41ebf72d49075cbbc0f6086768".
+[Mon Mar  3 09:35:15 2014] [debug] Rendering inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Mon Mar  3 09:35:15 2014] [debug] 404 Not Found (0.034289s, 29.164/s).
+[Mon Mar  3 09:36:28 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 09:36:35 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 09:36:35 2014] [debug] GET "/changeName.html".
+[Mon Mar  3 09:36:35 2014] [debug] Template "not_found.development.html.ep" not found.
+[Mon Mar  3 09:36:35 2014] [debug] Template "not_found.html.ep" not found.
+[Mon Mar  3 09:36:35 2014] [debug] Rendering inline template "b260ba41ebf72d49075cbbc0f6086768".
+[Mon Mar  3 09:36:35 2014] [debug] Rendering inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Mon Mar  3 09:36:35 2014] [debug] 404 Not Found (0.034390s, 29.078/s).
+[Mon Mar  3 09:39:38 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 09:39:51 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 09:39:51 2014] [debug] GET "/".
+[Mon Mar  3 09:39:51 2014] [debug] Routing to controller "CHProject::Example" and action "welcome".
+[Mon Mar  3 09:39:51 2014] [debug] Rendering template "example/welcome.html.ep".
+[Mon Mar  3 09:39:51 2014] [debug] Rendering template "layouts/default.html.ep".
+[Mon Mar  3 09:39:51 2014] [debug] 200 OK (0.036935s, 27.075/s).
+[Mon Mar  3 09:39:54 2014] [debug] GET "/changeName".
+[Mon Mar  3 09:39:54 2014] [debug] Controller "CHProject::Controller::Changename" does not exist.
+[Mon Mar  3 09:39:54 2014] [debug] Rendering template "changeName/changeName.html.ep".
+[Mon Mar  3 09:39:54 2014] [debug] Rendering template "layouts/default.html.ep".
+[Mon Mar  3 09:39:54 2014] [debug] 200 OK (0.018060s, 55.371/s).
+[Mon Mar  3 09:40:44 2014] [debug] POST "/changeName".
+[Mon Mar  3 09:40:44 2014] [debug] Controller "CHProject::Controller::Changename" does not exist.
+[Mon Mar  3 09:40:44 2014] [debug] Rendering cached template "changeName/changeName.html.ep".
+[Mon Mar  3 09:40:44 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Mon Mar  3 09:40:44 2014] [debug] 200 OK (0.016012s, 62.453/s).
+[Mon Mar  3 09:40:51 2014] [debug] GET "/".
+[Mon Mar  3 09:40:51 2014] [debug] Routing to controller "CHProject::Example" and action "welcome".
+[Mon Mar  3 09:40:51 2014] [debug] Rendering cached template "example/welcome.html.ep".
+[Mon Mar  3 09:40:51 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Mon Mar  3 09:40:51 2014] [debug] 200 OK (0.004626s, 216.169/s).
+[Mon Mar  3 09:43:04 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 09:43:11 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 09:43:11 2014] [debug] GET "/".
+[Mon Mar  3 09:43:11 2014] [debug] Routing to controller "CHProject::Example" and action "welcome".
+[Mon Mar  3 09:43:11 2014] [debug] Rendering template "example/welcome.html.ep".
+[Mon Mar  3 09:43:11 2014] [debug] Rendering template "layouts/default.html.ep".
+[Mon Mar  3 09:43:11 2014] [debug] 200 OK (0.038354s, 26.073/s).
+[Mon Mar  3 09:43:13 2014] [debug] GET "/changeName".
+[Mon Mar  3 09:43:13 2014] [debug] Controller "CHProject::Controller::Summary" does not exist.
+[Mon Mar  3 09:43:13 2014] [debug] Rendering template "summary/summary.html.ep".
+[Mon Mar  3 09:43:13 2014] [debug] Rendering template "layouts/default.html.ep".
+[Mon Mar  3 09:43:13 2014] [debug] 200 OK (0.017297s, 57.813/s).
+[Mon Mar  3 09:48:23 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 09:48:29 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 09:48:29 2014] [debug] GET "/".
+[Mon Mar  3 09:48:29 2014] [debug] Routing to controller "CHProject::Example" and action "welcome".
+[Mon Mar  3 09:48:29 2014] [debug] Rendering template "example/welcome.html.ep".
+[Mon Mar  3 09:48:29 2014] [debug] Rendering template "layouts/default.html.ep".
+[Mon Mar  3 09:48:29 2014] [debug] 200 OK (0.037641s, 26.567/s).
+[Mon Mar  3 09:48:33 2014] [debug] GET "/changeName".
+[Mon Mar  3 09:48:33 2014] [debug] Controller "CHProject::Controller::Changename" does not exist.
+[Mon Mar  3 09:48:33 2014] [debug] Rendering template "changeName/changeName.html.ep".
+[Mon Mar  3 09:48:33 2014] [debug] Rendering template "layouts/default.html.ep".
+[Mon Mar  3 09:48:33 2014] [debug] 200 OK (0.016993s, 58.848/s).
+[Mon Mar  3 09:48:40 2014] [debug] POST "/changeName".
+[Mon Mar  3 09:48:40 2014] [debug] Controller "CHProject::Controller::Changename" does not exist.
+[Mon Mar  3 09:48:40 2014] [debug] Rendering cached template "changeName/changeName.html.ep".
+[Mon Mar  3 09:48:40 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Mon Mar  3 09:48:40 2014] [debug] 200 OK (0.013455s, 74.322/s).
+[Mon Mar  3 09:49:10 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 09:49:16 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 09:49:16 2014] [debug] POST "/changeName".
+[Mon Mar  3 09:49:16 2014] [debug] Controller "CHProject::Controller::Changename" does not exist.
+[Mon Mar  3 09:49:16 2014] [debug] Rendering template "changeName/changeName.html.ep".
+[Mon Mar  3 09:49:16 2014] [debug] Rendering template "layouts/default.html.ep".
+[Mon Mar  3 09:49:16 2014] [debug] 200 OK (0.044340s, 22.553/s).
+[Mon Mar  3 09:50:11 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 09:50:16 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 09:50:16 2014] [debug] GET "/".
+[Mon Mar  3 09:50:16 2014] [debug] Routing to controller "CHProject::Example" and action "welcome".
+[Mon Mar  3 09:50:16 2014] [debug] Rendering template "example/welcome.html.ep".
+[Mon Mar  3 09:50:16 2014] [debug] Rendering template "layouts/default.html.ep".
+[Mon Mar  3 09:50:16 2014] [debug] 200 OK (0.037544s, 26.635/s).
+[Mon Mar  3 09:50:18 2014] [debug] GET "/changeName".
+[Mon Mar  3 09:50:18 2014] [debug] Controller "CHProject::Controller::Changename" does not exist.
+[Mon Mar  3 09:50:18 2014] [debug] Rendering template "changeName/changeName.html.ep".
+[Mon Mar  3 09:50:18 2014] [debug] Rendering template "layouts/default.html.ep".
+[Mon Mar  3 09:50:18 2014] [debug] 200 OK (0.016611s, 60.201/s).
+[Mon Mar  3 09:50:24 2014] [debug] POST "/changeName".
+[Mon Mar  3 09:50:24 2014] [debug] Controller "CHProject::Controller::Changename" does not exist.
+[Mon Mar  3 09:50:24 2014] [debug] Rendering cached template "changeName/changeName.html.ep".
+[Mon Mar  3 09:50:24 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Mon Mar  3 09:50:24 2014] [debug] 200 OK (0.013643s, 73.298/s).
+[Mon Mar  3 09:51:57 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 09:52:02 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 09:52:02 2014] [debug] POST "/changeName".
+[Mon Mar  3 09:52:02 2014] [debug] Controller "CHProject::Controller::Changename" does not exist.
+[Mon Mar  3 09:52:02 2014] [debug] Rendering template "changeName/changeName.html.ep".
+[Mon Mar  3 09:52:02 2014] [debug] Rendering template "layouts/default.html.ep".
+[Mon Mar  3 09:52:02 2014] [debug] 200 OK (0.049168s, 20.338/s).
+[Mon Mar  3 09:52:05 2014] [debug] POST "/changeName".
+[Mon Mar  3 09:52:05 2014] [debug] Controller "CHProject::Controller::Changename" does not exist.
+[Mon Mar  3 09:52:05 2014] [debug] Rendering cached template "changeName/changeName.html.ep".
+[Mon Mar  3 09:52:05 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Mon Mar  3 09:52:05 2014] [debug] 200 OK (0.015123s, 66.124/s).
+[Mon Mar  3 10:01:48 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 10:02:01 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 10:02:01 2014] [debug] GET "/".
+[Mon Mar  3 10:02:01 2014] [debug] Routing to controller "CHProject::Example" and action "welcome".
+[Mon Mar  3 10:02:01 2014] [debug] Rendering template "example/welcome.html.ep".
+[Mon Mar  3 10:02:01 2014] [debug] Rendering template "layouts/default.html.ep".
+[Mon Mar  3 10:02:01 2014] [debug] 200 OK (0.036918s, 27.087/s).
+[Mon Mar  3 10:02:02 2014] [debug] GET "/changeName".
+[Mon Mar  3 10:02:03 2014] [debug] Controller "CHProject::Controller::Changename" does not exist.
+[Mon Mar  3 10:02:03 2014] [debug] Rendering template "changeName/changeName.html.ep".
+[Mon Mar  3 10:02:03 2014] [debug] Rendering template "layouts/default.html.ep".
+[Mon Mar  3 10:02:03 2014] [debug] 200 OK (0.016474s, 60.702/s).
+[Mon Mar  3 10:02:07 2014] [debug] POST "/changeName".
+[Mon Mar  3 10:02:07 2014] [debug] Controller "CHProject::Controller::Changename" does not exist.
+[Mon Mar  3 10:02:07 2014] [debug] Rendering cached template "changeName/changeName.html.ep".
+[Mon Mar  3 10:02:07 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Mon Mar  3 10:02:07 2014] [debug] 200 OK (0.013547s, 73.817/s).
+[Mon Mar  3 10:02:59 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 10:03:03 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 10:03:03 2014] [debug] POST "/changeName".
+[Mon Mar  3 10:03:03 2014] [debug] Controller "CHProject::Controller::Changename" does not exist.
+[Mon Mar  3 10:03:03 2014] [debug] Rendering template "changeName/changeName.html.ep".
+[Mon Mar  3 10:03:03 2014] [debug] Rendering template "layouts/default.html.ep".
+[Mon Mar  3 10:03:03 2014] [debug] 200 OK (0.047642s, 20.990/s).
+[Mon Mar  3 10:03:07 2014] [debug] POST "/changeName".
+[Mon Mar  3 10:03:07 2014] [debug] Controller "CHProject::Controller::Changename" does not exist.
+[Mon Mar  3 10:03:07 2014] [debug] Rendering cached template "changeName/changeName.html.ep".
+[Mon Mar  3 10:03:07 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Mon Mar  3 10:03:07 2014] [debug] 200 OK (0.014369s, 69.594/s).
+[Mon Mar  3 10:03:57 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 10:04:01 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 10:04:01 2014] [debug] POST "/changeName".
+[Mon Mar  3 10:04:01 2014] [debug] Controller "CHProject::Controller::Changename" does not exist.
+[Mon Mar  3 10:04:01 2014] [debug] Rendering template "changeName/changeName.html.ep".
+[Mon Mar  3 10:04:01 2014] [debug] Rendering template "layouts/default.html.ep".
+[Mon Mar  3 10:04:01 2014] [debug] 200 OK (0.053719s, 18.615/s).
+[Mon Mar  3 10:04:04 2014] [debug] POST "/changeName".
+[Mon Mar  3 10:04:04 2014] [debug] Controller "CHProject::Controller::Changename" does not exist.
+[Mon Mar  3 10:04:04 2014] [debug] Rendering cached template "changeName/changeName.html.ep".
+[Mon Mar  3 10:04:04 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Mon Mar  3 10:04:04 2014] [debug] 200 OK (0.014613s, 68.432/s).
+[Mon Mar  3 10:11:05 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 10:11:09 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 10:11:09 2014] [debug] GET "/".
+[Mon Mar  3 10:11:09 2014] [debug] Routing to controller "CHProject::Example" and action "welcome".
+[Mon Mar  3 10:11:09 2014] [debug] Rendering template "example/welcome.html.ep".
+[Mon Mar  3 10:11:09 2014] [debug] Rendering template "layouts/default.html.ep".
+[Mon Mar  3 10:11:09 2014] [debug] 200 OK (0.037397s, 26.740/s).
+[Mon Mar  3 10:11:11 2014] [debug] GET "/changeName".
+[Mon Mar  3 10:11:11 2014] [debug] Controller "CHProject::Controller::Changename" does not exist.
+[Mon Mar  3 10:11:11 2014] [debug] Rendering template "changeName/changeName.html.ep".
+[Mon Mar  3 10:11:11 2014] [debug] Rendering template "layouts/default.html.ep".
+[Mon Mar  3 10:11:11 2014] [debug] 200 OK (0.017047s, 58.661/s).
+[Mon Mar  3 10:11:17 2014] [debug] POST "/changeName".
+[Mon Mar  3 10:11:17 2014] [debug] Controller "CHProject::Controller::Changename" does not exist.
+[Mon Mar  3 10:11:17 2014] [debug] Rendering cached template "changeName/changeName.html.ep".
+[Mon Mar  3 10:11:17 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Mon Mar  3 10:11:17 2014] [debug] 200 OK (0.013577s, 73.654/s).
+[Mon Mar  3 10:15:18 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 10:15:22 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 10:15:22 2014] [debug] GET "/".
+[Mon Mar  3 10:15:22 2014] [debug] Routing to controller "CHProject::Example" and action "welcome".
+[Mon Mar  3 10:15:22 2014] [debug] Rendering template "example/welcome.html.ep".
+[Mon Mar  3 10:15:22 2014] [debug] Rendering template "layouts/default.html.ep".
+[Mon Mar  3 10:15:22 2014] [debug] 200 OK (0.037636s, 26.570/s).
+[Mon Mar  3 10:15:24 2014] [debug] GET "/changeName".
+[Mon Mar  3 10:15:24 2014] [debug] Controller "CHProject::Controller::Changename" does not exist.
+[Mon Mar  3 10:15:24 2014] [debug] Rendering template "changeName/changeName.html.ep".
+[Mon Mar  3 10:15:24 2014] [debug] Rendering template "layouts/default.html.ep".
+[Mon Mar  3 10:15:24 2014] [debug] 200 OK (0.017061s, 58.613/s).
+[Mon Mar  3 10:15:30 2014] [debug] POST "/changeName".
+[Mon Mar  3 10:15:30 2014] [debug] Controller "CHProject::Controller::Changename" does not exist.
+[Mon Mar  3 10:15:30 2014] [debug] Rendering cached template "changeName/changeName.html.ep".
+[Mon Mar  3 10:15:30 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Mon Mar  3 10:15:30 2014] [debug] 200 OK (0.013212s, 75.689/s).
+[Mon Mar  3 10:45:03 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 10:45:08 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 10:45:08 2014] [debug] GET "/".
+[Mon Mar  3 10:45:08 2014] [debug] Routing to controller "CHProject::Example" and action "welcome".
+[Mon Mar  3 10:45:08 2014] [debug] Rendering template "example/welcome.html.ep".
+[Mon Mar  3 10:45:08 2014] [debug] Rendering template "layouts/default.html.ep".
+[Mon Mar  3 10:45:08 2014] [debug] 200 OK (0.037461s, 26.694/s).
+[Mon Mar  3 10:45:09 2014] [debug] GET "/changeName".
+[Mon Mar  3 10:45:09 2014] [debug] Controller "CHProject::Controller::Changename" does not exist.
+[Mon Mar  3 10:45:09 2014] [debug] Rendering template "changeName/changeName.html.ep".
+[Mon Mar  3 10:45:09 2014] [debug] Rendering template "layouts/default.html.ep".
+[Mon Mar  3 10:45:09 2014] [debug] 200 OK (0.017524s, 57.065/s).
+[Mon Mar  3 10:45:15 2014] [debug] POST "/changeName".
+[Mon Mar  3 10:45:15 2014] [debug] Controller "CHProject::Controller::Changename" does not exist.
+[Mon Mar  3 10:45:15 2014] [debug] Rendering cached template "changeName/changeName.html.ep".
+[Mon Mar  3 10:45:15 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Mon Mar  3 10:45:15 2014] [debug] 200 OK (0.013333s, 75.002/s).
+[Mon Mar  3 10:48:53 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 10:48:57 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 10:48:57 2014] [debug] POST "/changeName".
+[Mon Mar  3 10:48:57 2014] [debug] Controller "CHProject::Controller::Changename" does not exist.
+[Mon Mar  3 10:48:57 2014] [debug] Rendering template "changeName/changeName.html.ep".
+[Mon Mar  3 10:48:57 2014] [debug] Rendering template "layouts/default.html.ep".
+[Mon Mar  3 10:48:57 2014] [debug] 200 OK (0.047711s, 20.960/s).
+[Mon Mar  3 10:49:04 2014] [debug] POST "/changeName".
+[Mon Mar  3 10:49:04 2014] [debug] Controller "CHProject::Controller::Changename" does not exist.
+[Mon Mar  3 10:49:04 2014] [debug] Rendering cached template "changeName/changeName.html.ep".
+[Mon Mar  3 10:49:04 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Mon Mar  3 10:49:04 2014] [debug] 200 OK (0.014183s, 70.507/s).
+[Mon Mar  3 10:49:27 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 10:49:31 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 10:49:31 2014] [debug] POST "/changeName".
+[Mon Mar  3 10:49:31 2014] [debug] Controller "CHProject::Controller::Changename" does not exist.
+[Mon Mar  3 10:49:31 2014] [debug] Rendering template "changeName/changeName.html.ep".
+[Mon Mar  3 10:49:31 2014] [debug] Rendering template "layouts/default.html.ep".
+[Mon Mar  3 10:49:31 2014] [debug] 200 OK (0.047043s, 21.257/s).
+[Mon Mar  3 10:49:37 2014] [debug] POST "/summary".
+[Mon Mar  3 10:49:37 2014] [debug] Template "not_found.development.html.ep" not found.
+[Mon Mar  3 10:49:37 2014] [debug] Template "not_found.html.ep" not found.
+[Mon Mar  3 10:49:37 2014] [debug] Rendering inline template "b260ba41ebf72d49075cbbc0f6086768".
+[Mon Mar  3 10:49:37 2014] [debug] Rendering inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Mon Mar  3 10:49:37 2014] [debug] 404 Not Found (0.035869s, 27.879/s).
+[Mon Mar  3 10:51:15 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 10:51:18 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 10:51:18 2014] [debug] POST "/summary".
+[Mon Mar  3 10:51:18 2014] [debug] Controller "CHProject::Controller::Summary" does not exist.
+[Mon Mar  3 10:51:18 2014] [debug] Rendering template "summary/summary.html.ep".
+[Mon Mar  3 10:51:18 2014] [debug] Rendering template "layouts/default.html.ep".
+[Mon Mar  3 10:51:18 2014] [debug] 200 OK (0.046594s, 21.462/s).
+[Mon Mar  3 10:53:35 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 10:53:42 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 10:53:42 2014] [debug] POST "/summary".
+[Mon Mar  3 10:53:42 2014] [debug] Controller "CHProject::Controller::Summary" does not exist.
+[Mon Mar  3 10:53:42 2014] [debug] Rendering template "summary/summary.html.ep".
+[Mon Mar  3 10:53:42 2014] [error] Global symbol "$company" requires explicit package name at template summary/summary.html.ep line 10.
+5: 	<div class = "page-header">
+6: 		<h1>Summary of Changes</h1>
+7: 
+8: 		<p class = "lead"><span class = "glyphicon glyphicon-ok"></span></p>
+9: 
+10: 		<p> Company ID: <%== $company->{id} %></p>
+11: 		<p> Company Name: <%== $ChangeName::company->{oldName} %></p>
+12: 		<p> </p>
+13: 
+14: 		<p> You want to change the name to: <%= $ChangeName::company->{newName} %></p>
+15: 	</div>
+
+[Mon Mar  3 10:53:42 2014] [debug] Template "exception.development.html.ep" not found.
+[Mon Mar  3 10:53:42 2014] [debug] Template "exception.html.ep" not found.
+[Mon Mar  3 10:53:42 2014] [debug] Rendering inline template "b260ba41ebf72d49075cbbc0f6086768".
+[Mon Mar  3 10:53:42 2014] [debug] Rendering inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Mon Mar  3 10:53:42 2014] [debug] 500 Internal Server Error (0.086098s, 11.615/s).
+[Mon Mar  3 10:54:29 2014] [debug] GET "/changeName".
+[Mon Mar  3 10:54:29 2014] [debug] Controller "CHProject::Controller::Changename" does not exist.
+[Mon Mar  3 10:54:29 2014] [debug] Rendering template "changeName/changeName.html.ep".
+[Mon Mar  3 10:54:29 2014] [debug] Rendering template "layouts/default.html.ep".
+[Mon Mar  3 10:54:29 2014] [debug] 200 OK (0.017012s, 58.782/s).
+[Mon Mar  3 10:56:02 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 10:56:07 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 10:56:07 2014] [debug] POST "/summary".
+[Mon Mar  3 10:56:07 2014] [debug] Controller "CHProject::Controller::Summary" does not exist.
+[Mon Mar  3 10:56:07 2014] [debug] Rendering template "summary/summary.html.ep".
+[Mon Mar  3 10:56:07 2014] [debug] Rendering template "layouts/default.html.ep".
+[Mon Mar  3 10:56:07 2014] [debug] 200 OK (0.046619s, 21.450/s).
+[Mon Mar  3 10:56:17 2014] [debug] GET "/".
+[Mon Mar  3 10:56:17 2014] [debug] Routing to controller "CHProject::Example" and action "welcome".
+[Mon Mar  3 10:56:17 2014] [debug] Rendering template "example/welcome.html.ep".
+[Mon Mar  3 10:56:17 2014] [debug] Rendering template "layouts/default.html.ep".
+[Mon Mar  3 10:56:17 2014] [debug] 200 OK (0.008523s, 117.330/s).
+[Mon Mar  3 10:56:19 2014] [debug] GET "/changeName".
+[Mon Mar  3 10:56:19 2014] [debug] Controller "CHProject::Controller::Changename" does not exist.
+[Mon Mar  3 10:56:19 2014] [debug] Rendering template "changeName/changeName.html.ep".
+[Mon Mar  3 10:56:19 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Mon Mar  3 10:56:19 2014] [debug] 200 OK (0.019051s, 52.491/s).
+[Mon Mar  3 10:56:24 2014] [debug] POST "/summary".
+[Mon Mar  3 10:56:24 2014] [debug] Controller "CHProject::Controller::Summary" does not exist.
+[Mon Mar  3 10:56:24 2014] [debug] Rendering cached template "summary/summary.html.ep".
+[Mon Mar  3 10:56:24 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Mon Mar  3 10:56:24 2014] [debug] 200 OK (0.013569s, 73.697/s).
+[Mon Mar  3 11:00:56 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 11:00:59 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 11:00:59 2014] [debug] POST "/summary".
+[Mon Mar  3 11:00:59 2014] [debug] Controller "CHProject::Controller::Summary" does not exist.
+[Mon Mar  3 11:00:59 2014] [debug] Rendering template "summary/summary.html.ep".
+[Mon Mar  3 11:00:59 2014] [error] Global symbol "$company" requires explicit package name at template summary/summary.html.ep line 10.
+Global symbol "$company" requires explicit package name at template summary/summary.html.ep line 11.
+Global symbol "$company" requires explicit package name at template summary/summary.html.ep line 14.
+5: 	<div class = "page-header">
+6: 		<h1>Summary of Changes</h1>
+7: 
+8: 		<p class = "lead"><span class = "glyphicon glyphicon-ok"></span></p>
+9: 
+10: 		<p> Company ID: <%== $company->{company_id} %></p>
+11: 		<p> Company Name: <%== $company->{company_name} %></p>
+12: 		<p> </p>
+13: 
+14: 		<p> You want to change the name to: <%= $company->{new_name} %></p>
+15: 	</div>
+
+[Mon Mar  3 11:00:59 2014] [debug] Template "exception.development.html.ep" not found.
+[Mon Mar  3 11:00:59 2014] [debug] Template "exception.html.ep" not found.
+[Mon Mar  3 11:00:59 2014] [debug] Rendering inline template "b260ba41ebf72d49075cbbc0f6086768".
+[Mon Mar  3 11:00:59 2014] [debug] Rendering inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Mon Mar  3 11:00:59 2014] [debug] 500 Internal Server Error (0.085706s, 11.668/s).
+[Mon Mar  3 11:03:14 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 11:03:19 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 11:03:19 2014] [debug] POST "/summary".
+[Mon Mar  3 11:03:19 2014] [debug] Controller "CHProject::Controller::Summary" does not exist.
+[Mon Mar  3 11:03:19 2014] [debug] Rendering template "summary/summary.html.ep".
+[Mon Mar  3 11:03:19 2014] [error] Global symbol "$company" requires explicit package name at template summary/summary.html.ep line 10.
+Global symbol "$company" requires explicit package name at template summary/summary.html.ep line 11.
+Global symbol "$company" requires explicit package name at template summary/summary.html.ep line 14.
+5: 	<div class = "page-header">
+6: 		<h1>Summary of Changes</h1>
+7: 
+8: 		<p class = "lead"><span class = "glyphicon glyphicon-ok"></span></p>
+9: 
+10: 		<p> Company ID: <%== $company->{company_id} %></p>
+11: 		<p> Company Name: <%== $company->{company_name} %></p>
+12: 		<p> </p>
+13: 
+14: 		<p> You want to change the name to: <%= $company->{new_name} %></p>
+15: 	</div>
+
+[Mon Mar  3 11:03:19 2014] [debug] Template "exception.development.html.ep" not found.
+[Mon Mar  3 11:03:19 2014] [debug] Template "exception.html.ep" not found.
+[Mon Mar  3 11:03:19 2014] [debug] Rendering inline template "b260ba41ebf72d49075cbbc0f6086768".
+[Mon Mar  3 11:03:19 2014] [debug] Rendering inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Mon Mar  3 11:03:19 2014] [debug] 500 Internal Server Error (0.089630s, 11.157/s).
+[Mon Mar  3 11:03:23 2014] [debug] GET "/".
+[Mon Mar  3 11:03:23 2014] [debug] Routing to controller "CHProject::Example" and action "welcome".
+[Mon Mar  3 11:03:23 2014] [debug] Rendering template "example/welcome.html.ep".
+[Mon Mar  3 11:03:23 2014] [debug] Rendering template "layouts/default.html.ep".
+[Mon Mar  3 11:03:23 2014] [debug] 200 OK (0.008492s, 117.758/s).
+[Mon Mar  3 11:03:24 2014] [debug] GET "/changeName".
+[Mon Mar  3 11:03:24 2014] [debug] Controller "CHProject::Controller::Changename" does not exist.
+[Mon Mar  3 11:03:24 2014] [debug] Rendering template "changeName/changeName.html.ep".
+[Mon Mar  3 11:03:24 2014] [debug] Rendering template "layouts/default.html.ep".
+[Mon Mar  3 11:03:24 2014] [debug] 200 OK (0.019015s, 52.590/s).
+[Mon Mar  3 11:03:28 2014] [debug] POST "/summary".
+[Mon Mar  3 11:03:28 2014] [debug] Controller "CHProject::Controller::Summary" does not exist.
+[Mon Mar  3 11:03:28 2014] [debug] Rendering template "summary/summary.html.ep".
+[Mon Mar  3 11:03:28 2014] [error] Global symbol "$company" requires explicit package name at template summary/summary.html.ep line 10.
+Global symbol "$company" requires explicit package name at template summary/summary.html.ep line 11.
+Global symbol "$company" requires explicit package name at template summary/summary.html.ep line 14.
+5: 	<div class = "page-header">
+6: 		<h1>Summary of Changes</h1>
+7: 
+8: 		<p class = "lead"><span class = "glyphicon glyphicon-ok"></span></p>
+9: 
+10: 		<p> Company ID: <%== $company->{company_id} %></p>
+11: 		<p> Company Name: <%== $company->{company_name} %></p>
+12: 		<p> </p>
+13: 
+14: 		<p> You want to change the name to: <%= $company->{new_name} %></p>
+15: 	</div>
+
+[Mon Mar  3 11:03:28 2014] [debug] Template "exception.development.html.ep" not found.
+[Mon Mar  3 11:03:28 2014] [debug] Template "exception.html.ep" not found.
+[Mon Mar  3 11:03:28 2014] [debug] Rendering cached inline template "b260ba41ebf72d49075cbbc0f6086768".
+[Mon Mar  3 11:03:28 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Mon Mar  3 11:03:28 2014] [debug] 500 Internal Server Error (0.031138s, 32.115/s).
+[Mon Mar  3 11:04:12 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 11:04:15 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 11:04:15 2014] [debug] POST "/summary".
+[Mon Mar  3 11:04:15 2014] [debug] Controller "CHProject::Controller::Summary" does not exist.
+[Mon Mar  3 11:04:15 2014] [debug] Rendering template "summary/summary.html.ep".
+[Mon Mar  3 11:04:15 2014] [error] Global symbol "$company" requires explicit package name at template summary/summary.html.ep line 10.
+Global symbol "$company" requires explicit package name at template summary/summary.html.ep line 11.
+Global symbol "$company" requires explicit package name at template summary/summary.html.ep line 14.
+5: 	<div class = "page-header">
+6: 		<h1>Summary of Changes</h1>
+7: 
+8: 		<p class = "lead"><span class = "glyphicon glyphicon-ok"></span></p>
+9: 
+10: 		<p> Company ID: <%== $company->{id} %></p>
+11: 		<p> Company Name: <%== $company->{oldName} %></p>
+12: 		<p> </p>
+13: 
+14: 		<p> You want to change the name to: <%= $company->{newName} %></p>
+15: 	</div>
+
+[Mon Mar  3 11:04:15 2014] [debug] Template "exception.development.html.ep" not found.
+[Mon Mar  3 11:04:15 2014] [debug] Template "exception.html.ep" not found.
+[Mon Mar  3 11:04:15 2014] [debug] Rendering inline template "b260ba41ebf72d49075cbbc0f6086768".
+[Mon Mar  3 11:04:15 2014] [debug] Rendering inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Mon Mar  3 11:04:15 2014] [debug] 500 Internal Server Error (0.088816s, 11.259/s).
+[Mon Mar  3 11:05:30 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 11:05:34 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 11:05:34 2014] [debug] POST "/summary".
+[Mon Mar  3 11:05:34 2014] [debug] Controller "CHProject::Controller::Summary" does not exist.
+[Mon Mar  3 11:05:34 2014] [debug] Rendering template "summary/summary.html.ep".
+[Mon Mar  3 11:05:34 2014] [error] Global symbol "$company_id" requires explicit package name at template summary/summary.html.ep line 10.
+Global symbol "$company_name" requires explicit package name at template summary/summary.html.ep line 11.
+Global symbol "$new_Name" requires explicit package name at template summary/summary.html.ep line 14.
+5: 	<div class = "page-header">
+6: 		<h1>Summary of Changes</h1>
+7: 
+8: 		<p class = "lead"><span class = "glyphicon glyphicon-ok"></span></p>
+9: 
+10: 		<p> Company ID: <%== $company_id %></p>
+11: 		<p> Company Name: <%== $company_name %></p>
+12: 		<p> </p>
+13: 
+14: 		<p> You want to change the name to: <%= $new_Name %></p>
+15: 	</div>
+
+[Mon Mar  3 11:05:34 2014] [debug] Template "exception.development.html.ep" not found.
+[Mon Mar  3 11:05:34 2014] [debug] Template "exception.html.ep" not found.
+[Mon Mar  3 11:05:34 2014] [debug] Rendering inline template "b260ba41ebf72d49075cbbc0f6086768".
+[Mon Mar  3 11:05:34 2014] [debug] Rendering inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Mon Mar  3 11:05:34 2014] [debug] 500 Internal Server Error (0.087029s, 11.490/s).
+[Mon Mar  3 11:08:47 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 11:08:51 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 11:08:51 2014] [debug] POST "/summary".
+[Mon Mar  3 11:08:51 2014] [debug] Controller "CHProject::Controller::Summary" does not exist.
+[Mon Mar  3 11:08:51 2014] [debug] Rendering template "summary/summary.html.ep".
+[Mon Mar  3 11:08:51 2014] [error] Global symbol "$new_Name" requires explicit package name at template summary/summary.html.ep line 14.
+9: 
+10: 		<p> Company ID: <%== $ChangeName::company->{company_id} %> </p>
+11: 		<p> Company Name: <%== $ChangeName::company->{company_name} %></p>
+12: 		<p> </p>
+13: 
+14: 		<p> You want to change the name to: <%= $ChangeName::company->{$new_Name} %></p>
+15: 	</div>
+16: </div>
+
+[Mon Mar  3 11:08:51 2014] [debug] Template "exception.development.html.ep" not found.
+[Mon Mar  3 11:08:51 2014] [debug] Template "exception.html.ep" not found.
+[Mon Mar  3 11:08:51 2014] [debug] Rendering inline template "b260ba41ebf72d49075cbbc0f6086768".
+[Mon Mar  3 11:08:51 2014] [debug] Rendering inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Mon Mar  3 11:08:51 2014] [debug] 500 Internal Server Error (0.084933s, 11.774/s).
+[Mon Mar  3 11:09:32 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 11:09:36 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 11:09:36 2014] [debug] POST "/summary".
+[Mon Mar  3 11:09:36 2014] [debug] Controller "CHProject::Controller::Summary" does not exist.
+[Mon Mar  3 11:09:36 2014] [debug] Rendering template "summary/summary.html.ep".
+[Mon Mar  3 11:09:36 2014] [error] Global symbol "$new_Name" requires explicit package name at template summary/summary.html.ep line 14.
+9: 
+10: 		<p> Company ID: <%== $ChangeName::company->{company_id} %> </p>
+11: 		<p> Company Name: <%== $ChangeName::company->{company_name} %></p>
+12: 		<p> </p>
+13: 
+14: 		<p> You want to change the name to: <%== $ChangeName::company->{$new_Name} %></p>
+15: 	</div>
+16: </div>
+
+[Mon Mar  3 11:09:36 2014] [debug] Template "exception.development.html.ep" not found.
+[Mon Mar  3 11:09:36 2014] [debug] Template "exception.html.ep" not found.
+[Mon Mar  3 11:09:36 2014] [debug] Rendering inline template "b260ba41ebf72d49075cbbc0f6086768".
+[Mon Mar  3 11:09:36 2014] [debug] Rendering inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Mon Mar  3 11:09:36 2014] [debug] 500 Internal Server Error (0.084562s, 11.826/s).
+[Mon Mar  3 11:09:44 2014] [debug] GET "/".
+[Mon Mar  3 11:09:44 2014] [debug] Routing to controller "CHProject::Example" and action "welcome".
+[Mon Mar  3 11:09:44 2014] [debug] Rendering template "example/welcome.html.ep".
+[Mon Mar  3 11:09:44 2014] [debug] Rendering template "layouts/default.html.ep".
+[Mon Mar  3 11:09:44 2014] [debug] 200 OK (0.008582s, 116.523/s).
+[Mon Mar  3 11:09:47 2014] [debug] GET "/changeName".
+[Mon Mar  3 11:09:47 2014] [debug] Controller "CHProject::Controller::Changename" does not exist.
+[Mon Mar  3 11:09:47 2014] [debug] Rendering template "changeName/changeName.html.ep".
+[Mon Mar  3 11:09:47 2014] [debug] Rendering template "layouts/default.html.ep".
+[Mon Mar  3 11:09:47 2014] [debug] 200 OK (0.017806s, 56.161/s).
+[Mon Mar  3 11:09:53 2014] [debug] POST "/summary".
+[Mon Mar  3 11:09:53 2014] [debug] Controller "CHProject::Controller::Summary" does not exist.
+[Mon Mar  3 11:09:53 2014] [debug] Rendering template "summary/summary.html.ep".
+[Mon Mar  3 11:09:53 2014] [error] Global symbol "$new_Name" requires explicit package name at template summary/summary.html.ep line 14.
+9: 
+10: 		<p> Company ID: <%== $ChangeName::company->{company_id} %> </p>
+11: 		<p> Company Name: <%== $ChangeName::company->{company_name} %></p>
+12: 		<p> </p>
+13: 
+14: 		<p> You want to change the name to: <%== $ChangeName::company->{$new_Name} %></p>
+15: 	</div>
+16: </div>
+
+[Mon Mar  3 11:09:53 2014] [debug] Template "exception.development.html.ep" not found.
+[Mon Mar  3 11:09:53 2014] [debug] Template "exception.html.ep" not found.
+[Mon Mar  3 11:09:53 2014] [debug] Rendering cached inline template "b260ba41ebf72d49075cbbc0f6086768".
+[Mon Mar  3 11:09:53 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Mon Mar  3 11:09:53 2014] [debug] 500 Internal Server Error (0.028928s, 34.569/s).
+[Mon Mar  3 11:10:26 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 11:10:31 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 11:10:31 2014] [debug] POST "/summary".
+[Mon Mar  3 11:10:31 2014] [debug] Controller "CHProject::Controller::Summary" does not exist.
+[Mon Mar  3 11:10:31 2014] [debug] Rendering template "summary/summary.html.ep".
+[Mon Mar  3 11:10:31 2014] [debug] Rendering template "layouts/default.html.ep".
+[Mon Mar  3 11:10:31 2014] [debug] 200 OK (0.048672s, 20.546/s).
+[Mon Mar  3 11:12:31 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 11:12:34 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 11:12:34 2014] [debug] POST "/summary".
+[Mon Mar  3 11:12:34 2014] [debug] Controller "CHProject::Controller::Summary" does not exist.
+[Mon Mar  3 11:12:34 2014] [debug] Rendering template "summary/summary.html.ep".
+[Mon Mar  3 11:12:34 2014] [debug] Rendering template "layouts/default.html.ep".
+[Mon Mar  3 11:12:34 2014] [debug] 200 OK (0.048684s, 20.541/s).
+[Mon Mar  3 11:16:39 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 11:16:43 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 11:16:43 2014] [debug] POST "/summary".
+[Mon Mar  3 11:16:43 2014] [debug] Controller "CHProject::Controller::Summary" does not exist.
+[Mon Mar  3 11:16:43 2014] [debug] Rendering template "summary/summary.html.ep".
+[Mon Mar  3 11:16:43 2014] [debug] Rendering template "layouts/default.html.ep".
+[Mon Mar  3 11:16:43 2014] [debug] 200 OK (0.047067s, 21.246/s).
+[Mon Mar  3 11:24:51 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 11:24:54 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 11:24:54 2014] [debug] POST "/summary".
+[Mon Mar  3 11:24:54 2014] [debug] Controller "CHProject::Controller::Summary" does not exist.
+[Mon Mar  3 11:24:54 2014] [debug] Rendering template "summary/summary.html.ep".
+[Mon Mar  3 11:24:54 2014] [debug] Rendering template "layouts/default.html.ep".
+[Mon Mar  3 11:24:54 2014] [debug] 200 OK (0.043873s, 22.793/s).
+[Mon Mar  3 11:28:20 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 11:28:28 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 11:28:28 2014] [debug] GET "/".
+[Mon Mar  3 11:28:28 2014] [debug] Routing to controller "CHProject::Example" and action "welcome".
+[Mon Mar  3 11:28:28 2014] [debug] Rendering template "example/welcome.html.ep".
+[Mon Mar  3 11:28:28 2014] [debug] Rendering template "layouts/default.html.ep".
+[Mon Mar  3 11:28:28 2014] [debug] 200 OK (0.037013s, 27.018/s).
+[Mon Mar  3 11:28:30 2014] [debug] GET "/changeName".
+[Mon Mar  3 11:28:30 2014] [debug] Controller "CHProject::Controller::Changename" does not exist.
+[Mon Mar  3 11:28:30 2014] [debug] Rendering template "changeName/changeName.html.ep".
+[Mon Mar  3 11:28:30 2014] [debug] Rendering template "layouts/default.html.ep".
+[Mon Mar  3 11:28:30 2014] [debug] 200 OK (0.014097s, 70.937/s).
+[Mon Mar  3 11:28:34 2014] [debug] POST "/summary".
+[Mon Mar  3 11:28:34 2014] [debug] Controller "CHProject::Controller::Summary" does not exist.
+[Mon Mar  3 11:28:34 2014] [debug] Rendering template "summary/summary.html.ep".
+[Mon Mar  3 11:28:34 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Mon Mar  3 11:28:34 2014] [debug] 200 OK (0.013963s, 71.618/s).
+[Mon Mar  3 11:31:51 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 11:31:54 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 11:31:54 2014] [debug] POST "/summary".
+[Mon Mar  3 11:31:54 2014] [debug] Controller "CHProject::Controller::Summary" does not exist.
+[Mon Mar  3 11:31:54 2014] [debug] Rendering template "summary/summary.html.ep".
+[Mon Mar  3 11:31:54 2014] [debug] Rendering template "layouts/default.html.ep".
+[Mon Mar  3 11:31:54 2014] [debug] 200 OK (0.048188s, 20.752/s).
+[Mon Mar  3 11:32:30 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 11:32:33 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 11:32:33 2014] [debug] POST "/summary".
+[Mon Mar  3 11:32:33 2014] [debug] Controller "CHProject::Controller::Summary" does not exist.
+[Mon Mar  3 11:32:33 2014] [debug] Rendering template "summary/summary.html.ep".
+[Mon Mar  3 11:32:33 2014] [error] Global symbol "$company" requires explicit package name at template summary/summary.html.ep line 10.
+Global symbol "$company" requires explicit package name at template summary/summary.html.ep line 11.
+Global symbol "$company" requires explicit package name at template summary/summary.html.ep line 14.
+5: 	<div class = "page-header">
+6: 		<h1>Summary of Changes</h1>
+7: 
+8: 		<p class = "lead"><span class = "glyphicon glyphicon-ok"></span></p>
+9: 
+10: 		<p> Company ID: <%== $company->{id} %> </p>
+11: 		<p> Company Name: <%== $company->{oldname} %></p>
+12: 		<p> </p>
+13: 
+14: 		<p> You want to change the name to: <%== $company->{newName} %></p>
+15: 	</div>
+
+[Mon Mar  3 11:32:33 2014] [debug] Template "exception.development.html.ep" not found.
+[Mon Mar  3 11:32:33 2014] [debug] Template "exception.html.ep" not found.
+[Mon Mar  3 11:32:33 2014] [debug] Rendering inline template "b260ba41ebf72d49075cbbc0f6086768".
+[Mon Mar  3 11:32:33 2014] [debug] Rendering inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Mon Mar  3 11:32:33 2014] [debug] 500 Internal Server Error (0.083484s, 11.978/s).
+[Mon Mar  3 11:38:48 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 11:38:51 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 11:38:51 2014] [debug] POST "/summary".
+[Mon Mar  3 11:38:51 2014] [debug] Controller "CHProject::Controller::Summary" does not exist.
+[Mon Mar  3 11:38:51 2014] [debug] Rendering template "summary/summary.html.ep".
+[Mon Mar  3 11:38:51 2014] [error] Global symbol "$id" requires explicit package name at template summary/summary.html.ep line 10.
+Global symbol "$oldname" requires explicit package name at template summary/summary.html.ep line 11.
+Global symbol "$newName" requires explicit package name at template summary/summary.html.ep line 14.
+5: 	<div class = "page-header">
+6: 		<h1>Summary of Changes</h1>
+7: 
+8: 		<p class = "lead"><span class = "glyphicon glyphicon-ok"></span></p>
+9: 
+10: 		<p> Company ID: <%= $id %></p>
+11: 		<p> Company Name: <%= $oldname %></p>
+12: 		<p> </p>
+13: 
+14: 		<p> You want to change the name to: <%= $newName %></p>
+15: 	</div>
+
+[Mon Mar  3 11:38:51 2014] [debug] Template "exception.development.html.ep" not found.
+[Mon Mar  3 11:38:51 2014] [debug] Template "exception.html.ep" not found.
+[Mon Mar  3 11:38:51 2014] [debug] Rendering inline template "b260ba41ebf72d49075cbbc0f6086768".
+[Mon Mar  3 11:38:51 2014] [debug] Rendering inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Mon Mar  3 11:38:51 2014] [debug] 500 Internal Server Error (0.076121s, 13.137/s).
+[Mon Mar  3 11:43:16 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 11:43:20 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 11:43:20 2014] [debug] POST "/summary".
+[Mon Mar  3 11:43:20 2014] [debug] Controller "CHProject::Controller::Summary" does not exist.
+[Mon Mar  3 11:43:20 2014] [debug] Rendering template "summary/summary.html.ep".
+[Mon Mar  3 11:43:20 2014] [error] Global symbol "$id" requires explicit package name at template summary/summary.html.ep line 10.
+Global symbol "$oldname" requires explicit package name at template summary/summary.html.ep line 11.
+Global symbol "$newName" requires explicit package name at template summary/summary.html.ep line 14.
+5: 	<div class = "page-header">
+6: 		<h1>Summary of Changes</h1>
+7: 
+8: 		<p class = "lead"><span class = "glyphicon glyphicon-ok"></span></p>
+9: 
+10: 		<p> Company ID: <%= ${id} %></p>
+11: 		<p> Company Name: <%= ${oldname} %></p>
+12: 		<p> </p>
+13: 
+14: 		<p> You want to change the name to: <%= ${newName} %></p>
+15: 	</div>
+
+[Mon Mar  3 11:43:20 2014] [debug] Template "exception.development.html.ep" not found.
+[Mon Mar  3 11:43:20 2014] [debug] Template "exception.html.ep" not found.
+[Mon Mar  3 11:43:20 2014] [debug] Rendering inline template "b260ba41ebf72d49075cbbc0f6086768".
+[Mon Mar  3 11:43:20 2014] [debug] Rendering inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Mon Mar  3 11:43:20 2014] [debug] 500 Internal Server Error (0.079705s, 12.546/s).
+[Mon Mar  3 11:45:58 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 11:46:01 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 11:46:01 2014] [debug] POST "/summary".
+[Mon Mar  3 11:46:01 2014] [debug] Controller "CHProject::Controller::Summary" does not exist.
+[Mon Mar  3 11:46:01 2014] [debug] Rendering template "summary/summary.html.ep".
+[Mon Mar  3 11:46:01 2014] [error] Global symbol "$id" requires explicit package name at template summary/summary.html.ep line 10.
+Global symbol "$oldname" requires explicit package name at template summary/summary.html.ep line 11.
+Global symbol "$newName" requires explicit package name at template summary/summary.html.ep line 14.
+5: 	<div class = "page-header">
+6: 		<h1>Summary of Changes</h1>
+7: 
+8: 		<p class = "lead"><span class = "glyphicon glyphicon-ok"></span></p>
+9: 
+10: 		<p> Company ID: <%= ${id} %></p>
+11: 		<p> Company Name: <%= ${oldname} %></p>
+12: 		<p> </p>
+13: 
+14: 		<p> You want to change the name to: <%= ${newName} %></p>
+15: 	</div>
+
+[Mon Mar  3 11:46:01 2014] [debug] Template "exception.development.html.ep" not found.
+[Mon Mar  3 11:46:01 2014] [debug] Template "exception.html.ep" not found.
+[Mon Mar  3 11:46:01 2014] [debug] Rendering inline template "b260ba41ebf72d49075cbbc0f6086768".
+[Mon Mar  3 11:46:01 2014] [debug] Rendering inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Mon Mar  3 11:46:01 2014] [debug] 500 Internal Server Error (0.077583s, 12.889/s).
+[Mon Mar  3 11:46:52 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 11:46:55 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 11:46:55 2014] [debug] POST "/summary".
+[Mon Mar  3 11:46:55 2014] [debug] Template "not_found.development.html.ep" not found.
+[Mon Mar  3 11:46:55 2014] [debug] Template "not_found.html.ep" not found.
+[Mon Mar  3 11:46:55 2014] [debug] Rendering inline template "b260ba41ebf72d49075cbbc0f6086768".
+[Mon Mar  3 11:46:55 2014] [debug] Rendering inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Mon Mar  3 11:46:55 2014] [debug] 404 Not Found (0.040408s, 24.748/s).
+[Mon Mar  3 11:47:57 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 11:48:01 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 11:48:01 2014] [debug] POST "/summary".
+[Mon Mar  3 11:48:01 2014] [debug] Template "not_found.development.html.ep" not found.
+[Mon Mar  3 11:48:01 2014] [debug] Template "not_found.html.ep" not found.
+[Mon Mar  3 11:48:01 2014] [debug] Rendering inline template "b260ba41ebf72d49075cbbc0f6086768".
+[Mon Mar  3 11:48:01 2014] [debug] Rendering inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Mon Mar  3 11:48:01 2014] [debug] 404 Not Found (0.037626s, 26.577/s).
+[Mon Mar  3 11:48:04 2014] [debug] GET "/".
+[Mon Mar  3 11:48:04 2014] [debug] Routing to controller "CHProject::Example" and action "welcome".
+[Mon Mar  3 11:48:04 2014] [debug] Rendering template "example/welcome.html.ep".
+[Mon Mar  3 11:48:04 2014] [debug] Rendering template "layouts/default.html.ep".
+[Mon Mar  3 11:48:04 2014] [debug] 200 OK (0.009778s, 102.270/s).
+[Mon Mar  3 11:48:07 2014] [debug] GET "/changeName".
+[Mon Mar  3 11:48:07 2014] [debug] Controller "CHProject::Controller::Changename" does not exist.
+[Mon Mar  3 11:48:07 2014] [debug] Rendering template "changeName/changeName.html.ep".
+[Mon Mar  3 11:48:07 2014] [debug] Rendering template "layouts/default.html.ep".
+[Mon Mar  3 11:48:07 2014] [debug] 200 OK (0.017059s, 58.620/s).
+[Mon Mar  3 11:48:12 2014] [debug] POST "/summary".
+[Mon Mar  3 11:48:12 2014] [debug] Template "not_found.development.html.ep" not found.
+[Mon Mar  3 11:48:12 2014] [debug] Template "not_found.html.ep" not found.
+[Mon Mar  3 11:48:12 2014] [debug] Rendering cached inline template "b260ba41ebf72d49075cbbc0f6086768".
+[Mon Mar  3 11:48:12 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Mon Mar  3 11:48:12 2014] [debug] 404 Not Found (0.013157s, 76.005/s).
+[Mon Mar  3 11:49:29 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 11:49:33 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 11:49:33 2014] [debug] POST "/summary".
+[Mon Mar  3 11:49:33 2014] [debug] Template "not_found.development.html.ep" not found.
+[Mon Mar  3 11:49:33 2014] [debug] Template "not_found.html.ep" not found.
+[Mon Mar  3 11:49:33 2014] [debug] Rendering inline template "b260ba41ebf72d49075cbbc0f6086768".
+[Mon Mar  3 11:49:33 2014] [debug] Rendering inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Mon Mar  3 11:49:33 2014] [debug] 404 Not Found (0.038617s, 25.895/s).
+[Mon Mar  3 11:50:26 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 11:50:30 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 11:50:30 2014] [debug] POST "/summary".
+[Mon Mar  3 11:50:30 2014] [debug] Controller "CHProject::Controller::Summary" does not exist.
+[Mon Mar  3 11:50:30 2014] [debug] Rendering template "summary/summary.html.ep".
+[Mon Mar  3 11:50:30 2014] [error] Global symbol "$id" requires explicit package name at template summary/summary.html.ep line 10.
+Global symbol "$oldname" requires explicit package name at template summary/summary.html.ep line 11.
+Global symbol "$newName" requires explicit package name at template summary/summary.html.ep line 14.
+5: 	<div class = "page-header">
+6: 		<h1>Summary of Changes</h1>
+7: 
+8: 		<p class = "lead"><span class = "glyphicon glyphicon-ok"></span></p>
+9: 
+10: 		<p> Company ID: <%= ${id} %></p>
+11: 		<p> Company Name: <%= ${oldname} %></p>
+12: 		<p> </p>
+13: 
+14: 		<p> You want to change the name to: <%= ${newName} %></p>
+15: 	</div>
+
+[Mon Mar  3 11:50:30 2014] [debug] Template "exception.development.html.ep" not found.
+[Mon Mar  3 11:50:30 2014] [debug] Template "exception.html.ep" not found.
+[Mon Mar  3 11:50:30 2014] [debug] Rendering inline template "b260ba41ebf72d49075cbbc0f6086768".
+[Mon Mar  3 11:50:30 2014] [debug] Rendering inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Mon Mar  3 11:50:30 2014] [debug] 500 Internal Server Error (0.077732s, 12.865/s).
+[Mon Mar  3 11:51:45 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 11:51:49 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 11:51:49 2014] [debug] POST "/summary".
+[Mon Mar  3 11:51:49 2014] [debug] Controller "CHProject::Controller::Summary" does not exist.
+[Mon Mar  3 11:51:49 2014] [debug] Rendering template "summary/summary.html.ep".
+[Mon Mar  3 11:51:49 2014] [error] Global symbol "$id" requires explicit package name at template summary/summary.html.ep line 10.
+Global symbol "$oldname" requires explicit package name at template summary/summary.html.ep line 11.
+Global symbol "$newName" requires explicit package name at template summary/summary.html.ep line 14.
+5: 	<div class = "page-header">
+6: 		<h1>Summary of Changes</h1>
+7: 
+8: 		<p class = "lead"><span class = "glyphicon glyphicon-ok"></span></p>
+9: 
+10: 		<p> Company ID: <%= ${id} %></p>
+11: 		<p> Company Name: <%= ${oldname} %></p>
+12: 		<p> </p>
+13: 
+14: 		<p> You want to change the name to: <%= ${newName} %></p>
+15: 	</div>
+
+[Mon Mar  3 11:51:49 2014] [debug] Template "exception.development.html.ep" not found.
+[Mon Mar  3 11:51:49 2014] [debug] Template "exception.html.ep" not found.
+[Mon Mar  3 11:51:49 2014] [debug] Rendering inline template "b260ba41ebf72d49075cbbc0f6086768".
+[Mon Mar  3 11:51:49 2014] [debug] Rendering inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Mon Mar  3 11:51:49 2014] [debug] 500 Internal Server Error (0.073879s, 13.536/s).
+[Mon Mar  3 11:55:36 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 11:55:40 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 11:55:40 2014] [debug] POST "/summary".
+[Mon Mar  3 11:55:40 2014] [debug] Controller "CHProject::Controller::Summary" does not exist.
+[Mon Mar  3 11:55:40 2014] [debug] Rendering template "summary/summary.html.ep".
+[Mon Mar  3 11:55:40 2014] [error] Global symbol "$id" requires explicit package name at template summary/summary.html.ep line 10.
+Global symbol "$oldname" requires explicit package name at template summary/summary.html.ep line 11.
+Global symbol "$newName" requires explicit package name at template summary/summary.html.ep line 14.
+5: 	<div class = "page-header">
+6: 		<h1>Summary of Changes</h1>
+7: 
+8: 		<p class = "lead"><span class = "glyphicon glyphicon-ok"></span></p>
+9: 
+10: 		<p> Company ID: <%= ${id} %></p>
+11: 		<p> Company Name: <%= ${oldname} %></p>
+12: 		<p> </p>
+13: 
+14: 		<p> You want to change the name to: <%= ${newName} %></p>
+15: 	</div>
+
+[Mon Mar  3 11:55:40 2014] [debug] Template "exception.development.html.ep" not found.
+[Mon Mar  3 11:55:40 2014] [debug] Template "exception.html.ep" not found.
+[Mon Mar  3 11:55:40 2014] [debug] Rendering inline template "b260ba41ebf72d49075cbbc0f6086768".
+[Mon Mar  3 11:55:40 2014] [debug] Rendering inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Mon Mar  3 11:55:40 2014] [debug] 500 Internal Server Error (0.077238s, 12.947/s).
+[Mon Mar  3 12:01:06 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 12:01:09 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 12:01:09 2014] [debug] POST "/summary".
+[Mon Mar  3 12:01:09 2014] [debug] Controller "CHProject::Controller::Summary" does not exist.
+[Mon Mar  3 12:01:09 2014] [debug] Rendering template "summary/summary.html.ep".
+[Mon Mar  3 12:01:09 2014] [error] Global symbol "$id" requires explicit package name at template summary/summary.html.ep line 10.
+Global symbol "$oldname" requires explicit package name at template summary/summary.html.ep line 11.
+Global symbol "$newName" requires explicit package name at template summary/summary.html.ep line 14.
+5: 	<div class = "page-header">
+6: 		<h1>Summary of Changes</h1>
+7: 
+8: 		<p class = "lead"><span class = "glyphicon glyphicon-ok"></span></p>
+9: 
+10: 		<p> Company ID: <%= ${id} %></p>
+11: 		<p> Company Name: <%= ${oldname} %></p>
+12: 		<p> </p>
+13: 
+14: 		<p> You want to change the name to: <%= ${newName} %></p>
+15: 	</div>
+
+[Mon Mar  3 12:01:09 2014] [debug] Template "exception.development.html.ep" not found.
+[Mon Mar  3 12:01:09 2014] [debug] Template "exception.html.ep" not found.
+[Mon Mar  3 12:01:09 2014] [debug] Rendering inline template "b260ba41ebf72d49075cbbc0f6086768".
+[Mon Mar  3 12:01:09 2014] [debug] Rendering inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Mon Mar  3 12:01:09 2014] [debug] 500 Internal Server Error (0.071974s, 13.894/s).
+[Mon Mar  3 12:06:50 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 12:06:54 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 12:06:54 2014] [debug] POST "/summary".
+[Mon Mar  3 12:06:54 2014] [debug] Controller "CHProject::Controller::Summary" does not exist.
+[Mon Mar  3 12:06:54 2014] [debug] Rendering template "summary/summary.html.ep".
+[Mon Mar  3 12:06:54 2014] [error] Global symbol "$id" requires explicit package name at template summary/summary.html.ep line 10.
+Global symbol "$oldname" requires explicit package name at template summary/summary.html.ep line 11.
+Global symbol "$newName" requires explicit package name at template summary/summary.html.ep line 14.
+5: 	<div class = "page-header">
+6: 		<h1>Summary of Changes</h1>
+7: 
+8: 		<p class = "lead"><span class = "glyphicon glyphicon-ok"></span></p>
+9: 
+10: 		<p> Company ID: <%= ${id} %></p>
+11: 		<p> Company Name: <%= ${oldname} %></p>
+12: 		<p> </p>
+13: 
+14: 		<p> You want to change the name to: <%= ${newName} %></p>
+15: 	</div>
+
+[Mon Mar  3 12:06:54 2014] [debug] Template "exception.development.html.ep" not found.
+[Mon Mar  3 12:06:54 2014] [debug] Template "exception.html.ep" not found.
+[Mon Mar  3 12:06:54 2014] [debug] Rendering inline template "b260ba41ebf72d49075cbbc0f6086768".
+[Mon Mar  3 12:06:54 2014] [debug] Rendering inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Mon Mar  3 12:06:54 2014] [debug] 500 Internal Server Error (0.078804s, 12.690/s).
+[Mon Mar  3 12:07:52 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 12:07:55 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 12:07:55 2014] [debug] POST "/summary".
+[Mon Mar  3 12:07:55 2014] [debug] Controller "CHProject::Controller::Summary" does not exist.
+[Mon Mar  3 12:07:55 2014] [debug] Rendering template "summary/summary.html.ep".
+[Mon Mar  3 12:07:55 2014] [error] Global symbol "$company" requires explicit package name at template summary/summary.html.ep line 10.
+Global symbol "$company" requires explicit package name at template summary/summary.html.ep line 11.
+Global symbol "$company" requires explicit package name at template summary/summary.html.ep line 14.
+5: 	<div class = "page-header">
+6: 		<h1>Summary of Changes</h1>
+7: 
+8: 		<p class = "lead"><span class = "glyphicon glyphicon-ok"></span></p>
+9: 
+10: 		<p> Company ID: <%= $company->{id} %></p>
+11: 		<p> Company Name: <%= $company->{oldname} %></p>
+12: 		<p> </p>
+13: 
+14: 		<p> You want to change the name to: <%= $company->{newName} %></p>
+15: 	</div>
+
+[Mon Mar  3 12:07:55 2014] [debug] Template "exception.development.html.ep" not found.
+[Mon Mar  3 12:07:55 2014] [debug] Template "exception.html.ep" not found.
+[Mon Mar  3 12:07:55 2014] [debug] Rendering inline template "b260ba41ebf72d49075cbbc0f6086768".
+[Mon Mar  3 12:07:55 2014] [debug] Rendering inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Mon Mar  3 12:07:55 2014] [debug] 500 Internal Server Error (0.079813s, 12.529/s).
+[Mon Mar  3 12:11:20 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 12:11:23 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 12:11:23 2014] [debug] POST "/summary".
+[Mon Mar  3 12:11:23 2014] [debug] Controller "CHProject::Controller::Summary" does not exist.
+[Mon Mar  3 12:11:23 2014] [debug] Rendering template "summary/summary.html.ep".
+[Mon Mar  3 12:11:23 2014] [error] Global symbol "$CHProject" requires explicit package name at template summary/summary.html.ep line 10.
+syntax error at template summary/summary.html.ep line 10, near "$CHProject:"
+Global symbol "$company" requires explicit package name at template summary/summary.html.ep line 11.
+Global symbol "$company" requires explicit package name at template summary/summary.html.ep line 14.
+syntax error at template summary/summary.html.ep line 16, near "} }"
+5: 	<div class = "page-header">
+6: 		<h1>Summary of Changes</h1>
+7: 
+8: 		<p class = "lead"><span class = "glyphicon glyphicon-ok"></span></p>
+9: 
+10: 		<p> Company ID: <%= $CHProject:Controller::ChangeName::company->{id} %></p>
+11: 		<p> Company Name: <%= $company->{oldname} %></p>
+12: 		<p> </p>
+13: 
+14: 		<p> You want to change the name to: <%= $company->{newName} %></p>
+15: 	</div>
+
+[Mon Mar  3 12:11:23 2014] [debug] Template "exception.development.html.ep" not found.
+[Mon Mar  3 12:11:23 2014] [debug] Template "exception.html.ep" not found.
+[Mon Mar  3 12:11:23 2014] [debug] Rendering inline template "b260ba41ebf72d49075cbbc0f6086768".
+[Mon Mar  3 12:11:23 2014] [debug] Rendering inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Mon Mar  3 12:11:23 2014] [debug] 500 Internal Server Error (0.078085s, 12.807/s).
+[Mon Mar  3 12:11:46 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 12:11:49 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 12:11:49 2014] [debug] POST "/summary".
+[Mon Mar  3 12:11:49 2014] [debug] Controller "CHProject::Controller::Summary" does not exist.
+[Mon Mar  3 12:11:49 2014] [debug] Rendering template "summary/summary.html.ep".
+[Mon Mar  3 12:11:49 2014] [error] Global symbol "$company" requires explicit package name at template summary/summary.html.ep line 11.
+Global symbol "$company" requires explicit package name at template summary/summary.html.ep line 14.
+6: 		<h1>Summary of Changes</h1>
+7: 
+8: 		<p class = "lead"><span class = "glyphicon glyphicon-ok"></span></p>
+9: 
+10: 		<p> Company ID: <%= $CHProject::Controller::ChangeName::company->{id} %></p>
+11: 		<p> Company Name: <%= $company->{oldname} %></p>
+12: 		<p> </p>
+13: 
+14: 		<p> You want to change the name to: <%= $company->{newName} %></p>
+15: 	</div>
+16: </div>
+
+[Mon Mar  3 12:11:49 2014] [debug] Template "exception.development.html.ep" not found.
+[Mon Mar  3 12:11:49 2014] [debug] Template "exception.html.ep" not found.
+[Mon Mar  3 12:11:49 2014] [debug] Rendering inline template "b260ba41ebf72d49075cbbc0f6086768".
+[Mon Mar  3 12:11:49 2014] [debug] Rendering inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Mon Mar  3 12:11:49 2014] [debug] 500 Internal Server Error (0.082874s, 12.067/s).
+[Mon Mar  3 12:12:12 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 12:12:19 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 12:12:19 2014] [debug] POST "/summary".
+[Mon Mar  3 12:12:19 2014] [debug] Controller "CHProject::Controller::Summary" does not exist.
+[Mon Mar  3 12:12:19 2014] [debug] Rendering template "summary/summary.html.ep".
+[Mon Mar  3 12:12:19 2014] [error] Global symbol "$company" requires explicit package name at template summary/summary.html.ep line 11.
+Global symbol "$company" requires explicit package name at template summary/summary.html.ep line 14.
+6: 		<h1>Summary of Changes</h1>
+7: 
+8: 		<p class = "lead"><span class = "glyphicon glyphicon-ok"></span></p>
+9: 
+10: 		<p> Company ID: <%= $CHProject::company->{id} %></p>
+11: 		<p> Company Name: <%= $company->{oldname} %></p>
+12: 		<p> </p>
+13: 
+14: 		<p> You want to change the name to: <%= $company->{newName} %></p>
+15: 	</div>
+16: </div>
+
+[Mon Mar  3 12:12:19 2014] [debug] Template "exception.development.html.ep" not found.
+[Mon Mar  3 12:12:19 2014] [debug] Template "exception.html.ep" not found.
+[Mon Mar  3 12:12:19 2014] [debug] Rendering inline template "b260ba41ebf72d49075cbbc0f6086768".
+[Mon Mar  3 12:12:19 2014] [debug] Rendering inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Mon Mar  3 12:12:19 2014] [debug] 500 Internal Server Error (0.078634s, 12.717/s).
+[Mon Mar  3 12:12:44 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 12:12:48 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 12:12:48 2014] [debug] POST "/summary".
+[Mon Mar  3 12:12:48 2014] [debug] Controller "CHProject::Controller::Summary" does not exist.
+[Mon Mar  3 12:12:48 2014] [debug] Rendering template "summary/summary.html.ep".
+[Mon Mar  3 12:12:48 2014] [debug] Rendering template "layouts/default.html.ep".
+[Mon Mar  3 12:12:48 2014] [debug] 200 OK (0.043428s, 23.027/s).
+[Mon Mar  3 12:15:08 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 12:15:11 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 12:15:11 2014] [debug] GET "/".
+[Mon Mar  3 12:15:11 2014] [debug] Routing to controller "CHProject::Example" and action "welcome".
+[Mon Mar  3 12:15:11 2014] [debug] Rendering template "example/welcome.html.ep".
+[Mon Mar  3 12:15:11 2014] [debug] Rendering template "layouts/default.html.ep".
+[Mon Mar  3 12:15:11 2014] [debug] 200 OK (0.032853s, 30.439/s).
+[Mon Mar  3 12:15:13 2014] [debug] GET "/changeName".
+[Mon Mar  3 12:15:13 2014] [debug] Controller "CHProject::Controller::Changename" does not exist.
+[Mon Mar  3 12:15:13 2014] [debug] Rendering template "changeName/changeName.html.ep".
+[Mon Mar  3 12:15:13 2014] [debug] Rendering template "layouts/default.html.ep".
+[Mon Mar  3 12:15:13 2014] [debug] 200 OK (0.015733s, 63.561/s).
+[Mon Mar  3 12:15:57 2014] [debug] POST "/summary".
+[Mon Mar  3 12:15:57 2014] [debug] Controller "CHProject::Controller::Summary" does not exist.
+[Mon Mar  3 12:15:57 2014] [debug] Rendering template "summary/summary.html.ep".
+[Mon Mar  3 12:15:57 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Mon Mar  3 12:15:57 2014] [debug] 200 OK (0.015009s, 66.627/s).
+[Mon Mar  3 12:18:59 2014] [debug] POST "/summary".
+[Mon Mar  3 12:18:59 2014] [debug] Controller "CHProject::Controller::Summary" does not exist.
+[Mon Mar  3 12:18:59 2014] [debug] Rendering cached template "summary/summary.html.ep".
+[Mon Mar  3 12:18:59 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Mon Mar  3 12:18:59 2014] [debug] 200 OK (0.013008s, 76.876/s).
+[Mon Mar  3 12:20:49 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 12:20:54 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 12:20:54 2014] [debug] GET "/".
+[Mon Mar  3 12:20:54 2014] [debug] Routing to controller "CHProject::Example" and action "welcome".
+[Mon Mar  3 12:20:54 2014] [debug] Rendering template "example/welcome.html.ep".
+[Mon Mar  3 12:20:54 2014] [debug] Rendering template "layouts/default.html.ep".
+[Mon Mar  3 12:20:54 2014] [debug] 200 OK (0.034630s, 28.877/s).
+[Mon Mar  3 12:20:57 2014] [debug] GET "/changeName".
+[Mon Mar  3 12:20:57 2014] [debug] Controller "CHProject::Controller::Changename" does not exist.
+[Mon Mar  3 12:20:57 2014] [debug] Rendering template "changeName/changeName.html.ep".
+[Mon Mar  3 12:20:57 2014] [debug] Rendering template "layouts/default.html.ep".
+[Mon Mar  3 12:20:57 2014] [debug] 200 OK (0.015855s, 63.072/s).
+[Mon Mar  3 12:21:07 2014] [debug] POST "/summary".
+[Mon Mar  3 12:21:07 2014] [debug] Controller "CHProject::Controller::Summary" does not exist.
+[Mon Mar  3 12:21:07 2014] [debug] Rendering template "summary/summary.html.ep".
+[Mon Mar  3 12:21:07 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Mon Mar  3 12:21:07 2014] [debug] 200 OK (0.014542s, 68.766/s).
+[Mon Mar  3 12:21:36 2014] [debug] GET "/summary".
+[Mon Mar  3 12:21:36 2014] [debug] Controller "CHProject::Controller::Summary" does not exist.
+[Mon Mar  3 12:21:36 2014] [debug] Rendering cached template "summary/summary.html.ep".
+[Mon Mar  3 12:21:36 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Mon Mar  3 12:21:36 2014] [debug] 200 OK (0.012007s, 83.285/s).
+[Mon Mar  3 12:23:40 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 12:23:46 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 12:23:46 2014] [debug] POST "/summary".
+[Mon Mar  3 12:23:46 2014] [debug] Controller "CHProject::Controller::Summary" does not exist.
+[Mon Mar  3 12:23:46 2014] [debug] Rendering template "summary/summary.html.ep".
+[Mon Mar  3 12:23:46 2014] [debug] Rendering template "layouts/default.html.ep".
+[Mon Mar  3 12:23:46 2014] [debug] 200 OK (0.042466s, 23.548/s).
+[Mon Mar  3 12:24:18 2014] [debug] POST "/summary".
+[Mon Mar  3 12:24:18 2014] [debug] Controller "CHProject::Controller::Summary" does not exist.
+[Mon Mar  3 12:24:18 2014] [debug] Rendering cached template "summary/summary.html.ep".
+[Mon Mar  3 12:24:18 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Mon Mar  3 12:24:18 2014] [debug] 200 OK (0.016010s, 62.461/s).
+[Mon Mar  3 12:27:40 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 12:27:43 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 12:27:43 2014] [debug] GET "/".
+[Mon Mar  3 12:27:43 2014] [debug] Routing to controller "CHProject::Example" and action "welcome".
+[Mon Mar  3 12:27:43 2014] [debug] Rendering template "example/welcome.html.ep".
+[Mon Mar  3 12:27:43 2014] [debug] Rendering template "layouts/default.html.ep".
+[Mon Mar  3 12:27:43 2014] [debug] 200 OK (0.030940s, 32.321/s).
+[Mon Mar  3 12:27:59 2014] [debug] GET "/changeName".
+[Mon Mar  3 12:27:59 2014] [debug] Controller "CHProject::Controller::Changename" does not exist.
+[Mon Mar  3 12:27:59 2014] [debug] Rendering template "changeName/changeName.html.ep".
+[Mon Mar  3 12:27:59 2014] [debug] Rendering template "layouts/default.html.ep".
+[Mon Mar  3 12:27:59 2014] [debug] 200 OK (0.016106s, 62.089/s).
+[Mon Mar  3 12:28:13 2014] [debug] GET "/changeName".
+[Mon Mar  3 12:28:13 2014] [debug] Controller "CHProject::Controller::Changename" does not exist.
+[Mon Mar  3 12:28:13 2014] [debug] Rendering cached template "changeName/changeName.html.ep".
+[Mon Mar  3 12:28:13 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Mon Mar  3 12:28:13 2014] [debug] 200 OK (0.013961s, 71.628/s).
+[Mon Mar  3 12:28:21 2014] [debug] POST "/summary".
+[Mon Mar  3 12:28:21 2014] [debug] Template "not_found.development.html.ep" not found.
+[Mon Mar  3 12:28:21 2014] [debug] Template "not_found.html.ep" not found.
+[Mon Mar  3 12:28:21 2014] [debug] Rendering inline template "b260ba41ebf72d49075cbbc0f6086768".
+[Mon Mar  3 12:28:21 2014] [debug] Rendering inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Mon Mar  3 12:28:21 2014] [debug] 404 Not Found (0.033019s, 30.286/s).
+[Mon Mar  3 12:31:06 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 12:31:11 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 12:31:11 2014] [debug] GET "/".
+[Mon Mar  3 12:31:11 2014] [debug] Routing to controller "CHProject::Example" and action "welcome".
+[Mon Mar  3 12:31:11 2014] [debug] Rendering template "example/welcome.html.ep".
+[Mon Mar  3 12:31:11 2014] [debug] Rendering template "layouts/default.html.ep".
+[Mon Mar  3 12:31:11 2014] [debug] 200 OK (0.038599s, 25.907/s).
+[Mon Mar  3 12:31:13 2014] [debug] GET "/summary".
+[Mon Mar  3 12:31:13 2014] [debug] Controller "CHProject::Controller::Summary" does not exist.
+[Mon Mar  3 12:31:13 2014] [debug] Rendering template "summary/summary.html.ep".
+[Mon Mar  3 12:31:13 2014] [debug] Rendering template "layouts/default.html.ep".
+[Mon Mar  3 12:31:13 2014] [debug] 200 OK (0.015676s, 63.792/s).
+[Mon Mar  3 12:31:17 2014] [debug] GET "/changeName".
+[Mon Mar  3 12:31:17 2014] [debug] Controller "CHProject::Controller::Changename" does not exist.
+[Mon Mar  3 12:31:17 2014] [debug] Rendering template "changeName/changeName.html.ep".
+[Mon Mar  3 12:31:17 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Mon Mar  3 12:31:17 2014] [debug] 200 OK (0.015525s, 64.412/s).
+[Mon Mar  3 12:31:25 2014] [debug] POST "/summary".
+[Mon Mar  3 12:31:25 2014] [debug] Controller "CHProject::Controller::Summary" does not exist.
+[Mon Mar  3 12:31:25 2014] [debug] Rendering cached template "summary/summary.html.ep".
+[Mon Mar  3 12:31:25 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Mon Mar  3 12:31:25 2014] [debug] 200 OK (0.013047s, 76.646/s).
+[Mon Mar  3 12:32:18 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 12:32:23 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 12:32:23 2014] [debug] GET "/".
+[Mon Mar  3 12:32:23 2014] [debug] Routing to controller "CHProject::Example" and action "welcome".
+[Mon Mar  3 12:32:23 2014] [debug] Rendering template "example/welcome.html.ep".
+[Mon Mar  3 12:32:23 2014] [debug] Rendering template "layouts/default.html.ep".
+[Mon Mar  3 12:32:23 2014] [debug] 200 OK (0.033764s, 29.617/s).
+[Mon Mar  3 12:32:29 2014] [debug] GET "/changeName".
+[Mon Mar  3 12:32:29 2014] [debug] Controller "CHProject::Controller::Changename" does not exist.
+[Mon Mar  3 12:32:29 2014] [debug] Rendering template "changeName/changeName.html.ep".
+[Mon Mar  3 12:32:29 2014] [debug] Rendering template "layouts/default.html.ep".
+[Mon Mar  3 12:32:29 2014] [debug] 200 OK (0.014261s, 70.121/s).
+[Mon Mar  3 12:32:34 2014] [debug] POST "/changeName".
+[Mon Mar  3 12:32:34 2014] [debug] Controller "CHProject::Controller::Changename" does not exist.
+[Mon Mar  3 12:32:34 2014] [debug] Rendering cached template "changeName/changeName.html.ep".
+[Mon Mar  3 12:32:34 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Mon Mar  3 12:32:34 2014] [debug] 200 OK (0.013022s, 76.793/s).
+[Mon Mar  3 12:33:48 2014] [info] Listening at "http://*:3000".
+[Mon Mar  3 12:33:53 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Mar  3 12:33:53 2014] [debug] GET "/".
+[Mon Mar  3 12:33:53 2014] [debug] Routing to controller "CHProject::Example" and action "welcome".
+[Mon Mar  3 12:33:53 2014] [debug] Rendering template "example/welcome.html.ep".
+[Mon Mar  3 12:33:53 2014] [debug] Rendering template "layouts/default.html.ep".
+[Mon Mar  3 12:33:53 2014] [debug] 200 OK (0.036918s, 27.087/s).
+[Mon Mar  3 12:33:56 2014] [debug] GET "/changeName".
+[Mon Mar  3 12:33:56 2014] [debug] Controller "CHProject::Controller::Changename" does not exist.
+[Mon Mar  3 12:33:56 2014] [debug] Rendering template "changeName/changeName.html.ep".
+[Mon Mar  3 12:33:56 2014] [debug] Rendering template "layouts/default.html.ep".
+[Mon Mar  3 12:33:56 2014] [debug] 200 OK (0.015595s, 64.123/s).
+[Mon Mar  3 12:34:02 2014] [debug] POST "/changeName".
+[Mon Mar  3 12:34:02 2014] [debug] Controller "CHProject::Controller::Changename" does not exist.
+[Mon Mar  3 12:34:02 2014] [debug] Rendering cached template "changeName/changeName.html.ep".
+[Mon Mar  3 12:34:02 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Mon Mar  3 12:34:02 2014] [debug] 200 OK (0.014561s, 68.677/s).

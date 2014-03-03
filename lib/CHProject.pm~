@@ -4,6 +4,7 @@ use Mojo::Base 'Mojolicious';
 # This method will run once at server start
 sub startup {
   my $self = shift;
+  push@{$self->routes->namespaces},'CHProject::Controller';
 
   # Documentation browser under "/perldoc"
   $self->plugin('PODRenderer');
@@ -13,6 +14,8 @@ sub startup {
 
   # Normal route to controller
   $r->get('/')->to('example#welcome');
+  $r->route('/changeName')->via('GET', 'POST')->to('changeName#changeName');
+  $r->route('/summary')->via('GET')->to('summary#summary');
 }
 
 1;

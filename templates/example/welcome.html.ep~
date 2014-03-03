@@ -8,6 +8,4 @@ and the layout "templates/layouts/default.html.ep",
 
 <a href="/changeName">click here</a> for form or
 
-<a href="/summary">click again</a> for Summary or
-
 <a href="/index.html">here</a> to move forward to a static page.
