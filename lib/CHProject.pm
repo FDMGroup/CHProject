@@ -14,8 +14,9 @@ sub startup {
 
   # Normal route to controller
   $r->get('/')->to('example#welcome');
-  $r->route('/changeName')->via('GET', 'POST')->to('changeName#changeName');
-  $r->route('/summary')->via('GET', 'POST')->to('summary#summary');
+  $r->route('/changeName')->via('GET', 'POST')->to('ChangeName#changeName');
+  $r->route('/summary')->via('GET', 'POST')->to('Summary#summary');
+  $r->route('/consentToAct')->via('GET', 'POST')->to('ConsentToAct#consentToAct');
 }
 
 1;
