@@ -1,5 +1,46 @@
 <!DOCTYPE html>
 <html>
-  <head><title><%= title %></title></head>
-  <body><%= content %></body>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+<head><title><%= title %></title>
+  <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+  <link href="css/bootstrap-basic.css" rel="stylesheet">
+</head>
+
+  <script src="js/html5shiv.js"></script>
+
+  <body>
+  <div class="container">
+    <div class="masthead">
+      <h3 class="text-muted">Companies House Web Filing</h3>
+	<div class="navbar" role="navigation">
+  	  <div class="navbar-inner">
+	    <div class="container">
+	      <ul class="nav">
+		<li class="active"><a href="/">Home</a></li>
+		<li><a href="/changeName">Change Name</a></li>
+		<li><a href="/">Other Forms</a></li>
+	      </ul>
+	    </div>
+	  </div>
+	</div><!-- /.navbar -->
+      </div>
+    
+	<div class="jumbotron"><%= content %></div>
+     </div> <!-- /container -->
+
+     <!-- javascript -->
+     <script src="js/jquery.js"></script>
+     <script src="js/bootstrap-transition.js"></script>
+     <script src="js/bootstrap-alert.js"></script>
+     <script src="js/bootstrap-modal.js"></script>
+     <script src="js/bootstrap-dropdown.js"></script>
+     <script src="js/bootstrap-scrollspy.js"></script>
+     <script src="js/bootstrap-tab.js"></script>
+     <script src="js/bootstrap-tooltip.js"></script>
+     <script src="js/bootstrap-popover.js"></script>
+     <script src="js/bootstrap-button.js"></script>
+     <script src="js/bootstrap-collapse.js"></script>
+     <script src="js/bootstrap-carousel.js"></script>
+     <script src="js/bootstrap-typeahead.js"></script>
+     </body>
 </html>
