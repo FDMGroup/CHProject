@@ -1,0 +1,53 @@
+%layout 'default';
+%title 'Consent to Act';
+
+<div class="container">
+	<div class="page-header"></div>
+	<h1>Consent To Act</h1>
+	
+	<p>To take the place of the signature, please complete 3 of the categories below relating to the information given when <%== session("oldname") %> was established.</p>
+
+	<p>Only complete 3 of the 7 available categories and enter 3 characters in each.</p>
+
+	<p><form role="form" method="post">
+		<div class="form-group">
+			<label for="birthplace">Town of Birth (first 3 letters only)</label>
+			<input type="text" name="birthplace" id="birthplace" class="form-control"></input>
+		</div>			
+
+		<div class="form-group">
+			<label for="phone">Last 3 digits of Telephone Number</label>
+			<input type="text" name="phone" id="phone" class="form-control"></input>
+		</div>
+
+		<div class="form-group">
+			<label for="passport">Last 3 digits of Passport Number</label>
+			<input type="text" name="passport" id="passport" class="form-control"></input>
+		</div>
+
+		<div class="form-group">
+			<label for="nin">Last 3 Characters of National Insurance Number</label>
+			<input type="text" name="nin" id="nin" class="form-control"></input>
+		</div>
+		
+		<div class="form-group">
+			<label for="maiden">Mothers Maiden Name (first 3 letters only)</label>
+			<input type="text" name="maiden" id="maiden" class="form-control"></input>
+		</div>
+		
+		<div class="form-group">
+			<label for="eye">Eye colour (first 3 letters only)</label>
+			<input type="text" name="eye" id="eye" class="form-control"></input>
+		</div>
+		
+		<div class="form-group">
+			<label for="father">Fathers First Name (first 3 letters only)</label>
+			<input type="text" name="father" id="father" class="form-control"></input>
+		</div>
+
+		<button name="submit" type="submit" class="btn btn-success">Submit</button>
+	</form></p>
+</div>
+
+<a href="/">Return to index</a>
+
