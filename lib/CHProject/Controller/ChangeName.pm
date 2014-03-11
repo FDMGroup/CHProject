@@ -14,11 +14,7 @@ sub changeName{
 			newName => $self->param('new_name')
 		);
 
-		my $oldName = $self->param('company_name');
-		my $id = $self->param('company_id');
-		my $newName = $self->param('new_name');
-
-		$self->redirect_to("changeName");
+		$self->redirect_to("summary");
 		return;
 		
 	}
