@@ -18,7 +18,7 @@ sub changeName{
 		my $id = $self->param('company_id');
 		my $newName = $self->param('new_name');
 
-		$self->redirect_to("changeName");
+		$self->redirect_to("summary");
 		return;
 		
 	}

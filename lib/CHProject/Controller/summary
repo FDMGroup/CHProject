@@ -1,9 +1,0 @@
-package CHProject::Controller:Summary;
-use Mojo:Base 'Mojolicious::Controller';
-use Mango;
-use Mango::BSON qw/ ;
-
-sub summary{
-	my($self) = @_;
-	$self->render;
-}
