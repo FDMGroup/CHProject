@@ -28,7 +28,7 @@ sub changeName{
 		#if the company info entered is valid, update the document and redirect
 		if($valid eq $oldName){
 			$self->db->collection('Companies')->update(
-				{ _id = $id },
+				{ _id => $id },
 				{ '$set' => { "company name" => $newName} },
 			);
 
