@@ -3,9 +3,9 @@ use Mojo::Base 'Mojolicious::Controller';
 
 sub summary{
 	my $self = shift;
-	my $id = $self->stash("id");
-	my $oldname = $self->stash("oldname");
-	my $newname = $self->stash("newname");
+	my $id = $self->session("id");
+	my $oldname = $self->session("oldname");
+	my $newname = $self->session("newname");
 	
 	$self->render("summary/summary");
 }

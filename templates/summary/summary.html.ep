@@ -7,10 +7,10 @@
 
 		<p class = "lead"><span class = "glyphicon glyphicon-ok"></span></p>
 
-		<p> Company ID: <%= $CHProject::company->{id} %></p>
-		<p> Company Name: <%= $CHProject::company->{oldname} %></p>
+		<p> Company ID: <%= session("id") %></p>
+		<p> Company Name: <%= session("oldName") %></p>
 		<p> </p>
 
-		<p> You want to change the name to: <%= $CHProject::company->{newName} %></p>
+		<p> You want to change the name to: <%= session("newName") %></p>
 	</div>
 </div>
