@@ -25,7 +25,7 @@ sub startup {
 sub helper_mango {
 	my $self = shift;
 	state $mango = Mango->new( 'mongodb://localhost:27017' );
-	return $mango->db( 'local' );
+	return $mango->db( 'CompaniesHouse' );
 }
 
 1;
