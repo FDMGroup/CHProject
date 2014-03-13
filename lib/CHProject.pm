@@ -9,6 +9,7 @@ sub startup {
 
   # Documentation browser under "/perldoc"
   $self->plugin('PODRenderer');
+  $self->helper( db => \&helper_mango );
 
   # Router
   my $r = $self->routes;
