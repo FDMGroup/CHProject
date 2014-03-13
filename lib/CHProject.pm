@@ -14,16 +14,19 @@ sub startup {
   # Router
   my $r = $self->routes;
 
+  $self->helper( db => \&helper_mango );
+
   # Normal route to controller
   $r->get('/')->to('example#welcome');
-  $r->route('/changeName')->via('GET', 'POST')->to('changeName#changeName');
-  $r->route('/summary')->via('GET', 'POST')->to('summary#summary');
+  $r->route('/changeName')->via('GET', 'POST')->to('ChangeName#changeName');
+  $r->route('/summary')->via('GET', 'POST')->to('Summary#summary');
+  $r->route('/consentToAct')->via('GET', 'POST')->to('ConsentToAct#consentToAct');
 }
 
-sub helper_mango{
+sub helper_mango {
 	my $self = shift;
-	state $mango = Mango->new ( 'mongodb://localhost:27017' );
-	return $mango->db ('CompaniesHouse');
+	state $mango = Mango->new( 'mongodb://localhost:27017' );
+	return $mango->db( 'CompaniesHouse' );
 }
 
 1;

@@ -18,7 +18,7 @@
 	      <ul class="nav">
 		<li class="active"><a href="/">Home</a></li>
 		<li><a href="/changeName">Change Name</a></li>
-		<li><a href="/">Other Forms</a></li>
+		<li><a href="/index.html">Other Forms</a></li>
 	      </ul>
 	    </div>
 	  </div>

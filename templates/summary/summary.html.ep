@@ -6,11 +6,15 @@
 		<h1>Summary of Changes</h1>
 
 		<p class = "lead"><span class = "glyphicon glyphicon-ok"></span></p>
+		
+		<p>You have registered a change!</p>
 
-		<p> Company ID: <%= $CHProject::company->{id} %></p>
-		<p> Company Name: <%= $CHProject::company->{oldname} %></p>
+		<p> Change ID: <%= session("changeid") %></p>
+		<p> Company ID: <%= session("id") %></p>
+		<p> Current Company Name: <%= session("oldname") %></p>
 		<p> </p>
 
-		<p> You want to change the name to: <%= $CHProject::company->{newName} %></p>
+		<p> You have changed the name to: <%= session("newname") %></p>
+		<p> These changes have been made to our Company Register as well as a record of the specific change saved. </p>
 	</div>
 </div>
