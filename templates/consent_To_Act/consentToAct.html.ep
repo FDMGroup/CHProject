@@ -5,7 +5,7 @@
 	<div class="page-header"></div>
 	<h1>Consent To Act</h1>
 	
-	<p>To take the place of the signature, please complete 3 of the categories below relating to the information given when <%== session("oldname") %> was established.</p>
+	<p>To take the place of the signature, please complete 3 of the categories below relating to the information given when <%= session("oldname") %> was established.</p>
 
 	<p>Only complete 3 of the 7 available categories and enter 3 characters in each.</p>
 

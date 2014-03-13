@@ -5,8 +5,8 @@ use Mango::BSON;
 use lib 'CHProject';
 
 sub consentToAct{
-	my ($self) = @_;
-	
+	my ($self) = shift;
+
 	if ($self->req->method eq 'POST'){
 		$self->render_later;
 
@@ -27,8 +27,10 @@ sub consentToAct{
 		my $maiden = $self->session('maiden');
 		my $eye = $self->session('eye');
 		my $father = $self->session('father');
-		my $id = $self->session('id');
+		my $id = $self->session->{id};
 		my $count = 0;
+
+		print $id;
 
 		if (defined($birthplace) && length($birthplace) == 3){
 			my $result = $self->db->collection('Companies')->find_one({_id => $id}, {cta => 'true'})->{'cta'}->{'birth'};

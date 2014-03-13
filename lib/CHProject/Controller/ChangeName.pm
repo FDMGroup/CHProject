@@ -10,9 +10,9 @@ sub changeName{
 		$self->render_later;
 
 		$self->session(
-			oldName => $self->param('company_name'),
+			oldname => $self->param('company_name'),
 			id => $self->param('company_id'),
-			newName => $self->param('new_name')
+			newname => $self->param('new_name')
 		);
 
 		$self->redirect_to('consentToAct');
