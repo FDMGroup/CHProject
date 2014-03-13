@@ -27,7 +27,7 @@ sub changeName{
 
 		#if the company info entered is valid, redirect
 		if($valid eq $oldName){
-			$self->redirect_to("summary");
+			$self->redirect_to("consentToAct");
 		}
 		#If invalid, try again
 		else {
