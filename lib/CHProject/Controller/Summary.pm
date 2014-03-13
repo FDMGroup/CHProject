@@ -9,14 +9,6 @@ sub summary{
 	my $oldname = $self->session->{oldname};
 	my $newname = $self->session->{newname};
 
-	print $id;
-	print "-----";
-	print $oldname;
-	print "-----";
-	print $newname;
-	print "-----";
-
-
 	#Update the Company Document
 	$self->db->collection('Companies')->update(
 		{ _id => $id },
