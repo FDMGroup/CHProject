@@ -1,12 +1,12 @@
-package CHProject::Common::Logo;
+package CHProject::Common::EELogo;
 
 =head1 NAME
 
-CHProject::Common::Logo;
+CHProject::Common::EELogo
 
 =head1 DESCRIPTION
 
-Grabs companies house logo
+Grab EE logo
 
 =cut
 
@@ -19,7 +19,7 @@ sub new {
 
 	bless($self, $class);
 
-	$self->{url} = 'http://tinyurl.com/comphouselogo';
+	$self->{url} = 'http://tinyurl.com/owgznzp';
 	return $self;
 }
 

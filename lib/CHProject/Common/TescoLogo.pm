@@ -1,4 +1,17 @@
-package CHProject::Common::BookCover;
+package CHProject::Common::TescoLogo;
+
+=head1 NAME
+
+CHProject::Common::TescoLogo
+
+=head1 DESCRIPTION
+
+Grabs Tesco logo
+
+=cut
+
+use Carp;
+use Data::Dumper;
 
 sub new {
 	my $class = shift;
@@ -6,7 +19,7 @@ sub new {
 
 	bless($self, $class);
 
-	$self->{url} = 'pics.cdn.librarything.com/picsizes/f6/4e/f64ed6f3da98991637275494177445341455542.jpg';
+	$self->{url} = 'http://tinyurl.com/q9cg2rx';
 	return $self;
 }
 
@@ -19,8 +32,6 @@ sub convert {
 	return $self;
 }
 
-sub url {
-	return shift->{url};
-}
+sub url { return shift->{url}; }
 
 1;

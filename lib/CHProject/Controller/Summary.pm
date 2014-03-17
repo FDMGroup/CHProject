@@ -1,75 +1,75 @@
 package CHProject::Controller::Summary;
 use Mojo::Base 'Mojolicious::Controller';
-use Mango;
-use Mango::BSON qw\ bson_ts \;
+use CHProject::Common::Logo;
+use CHProject::Common::TescoLogo;
+use CHProject::Common::EELogo;
 use Mojo::IOLoop;
+use Data::Dumper;
+use Carp;
 
 sub summary{
 	my $self = shift;
+	$self->render_later;
 	my $id = $self->session->{id};
-	my $oldname = $self->session->{oldname};
-	my $newname = $self->session->{newname};
-
-	#Update the Company Document
-	$self->db->collection('Companies')->update(
-		{ _id => $id },
-		{ '$set' => { "company name" => $newname } },
-	);
-
-	#Add Change Record
-	$self->db->collection('Changes')->insert(
-		{ 'company id' => $id,
-		  'old name' => $oldname,
-		  'updated name' => $newname,
-		  'time' => bson_ts(time) }
-	);
-
-	my $doc = $self->db->collection('Changes')->find_one(
-		{ 'company id' => $id,
-		  'updated name' => $newname }
-	);
-
-	$self->session(
-		changeid => $doc->{'_id'},
-		oldname => $doc->{'old name'},
-		newname => $doc->{'updated name'},
-		id => $id
-	);
-	
 	my $delay = Mojo::IOLoop->delay;
+	
 	$delay->steps(
 		sub {
 			my $delay = shift;
-			my $end0 = $delay->begin;
-			
+
 			my $feed1 = new CHProject::Common::Logo;
-			my $feed2 = new CHProject::Common::BookCover;
-			
+			my $feed2 = new CHProject::Common::TescoLogo;
+			my $feed3 = new CHProject::Common::EELogo;
+		
 			my $end1 = $delay->begin;
-			$self->ua->get( $feed1->url, sub {
-				shift;
-				$end1->(0, feed1 => $feed1, logo => shift);
-			});
+			$self->ua->get($feed1->url, 
+				sub { 
+					shift; 
+					$end1->(0, feed1 => $feed1, logo => shift); 
+				});
 
 			my $end2 = $delay->begin;
-			$self->ua->get( $feed2->url, sub {
-				shift;
-				$end1->(0, feed2 => $feed2, book => shift);
-			});
+			$self->ua->get($feed2->url, 
+				sub {
+					shift;
+					$end2->(0, feed2 => $feed2, tescoLogo => shift);
+				});
+			
+			my $end3 = $delay->begin;
+			$self->ua->get($feed3->url, 
+				sub {
+					shift;
+					$end3->(0, feed3 => $feed3, eeLogo => shift);
+				});
 		},
+
 		sub {
 			my $delay = shift;
 			my $arg = {@_};
 
 			$arg->{feed1}->convert($arg->{logo});
-			$arg->{feed2}->convert($arg->{book});
+			$arg->{feed2}->convert($arg->{tescoLogo});
+			$arg->{feed3}->convert($arg->{eeLogo});
 
-			$self->stash(logo => $arg->{feed1}->items);
-			$self->stash(book => $arg->{feed2}->items);
-			
-			$self->renderr("summary/summary");
+			$self->session(
+				logo => $arg->{feed1}->url,
+				tescoLogo => $arg->{feed2}->url,
+				eeLogo => $arg->{feed3}->url
+			);
+
+			if( $id eq '2') {$self->session(companyLogo => $arg->{feed2}->url);}
+			if( $id eq '5') {$self->session(companyLogo => $arg->{feed3}->url);}
+
+
+			$self->renderer;
 		},
 	);
+}
+
+
+sub renderer {
+	my $self = shift;
+	$self->render("summary/summary");
 }
 
 1;

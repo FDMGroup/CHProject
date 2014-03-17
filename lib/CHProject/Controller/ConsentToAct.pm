@@ -97,7 +97,7 @@ sub consentToAct{
 		print $count;		
 		
 		if($count == 3){
-			$self->redirect_to('summary');
+			$self->redirect_to('update');
 		} else {
 			$self->redirect_to('consentToAct');
 		}
