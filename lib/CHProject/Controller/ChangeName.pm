@@ -1,7 +1,7 @@
 package CHProject::Controller::ChangeName;
 use Mojo::Base 'Mojolicious::Controller';
-#use Mango;
-#use Mango::BSON qw/ bson_ts /;
+use Mango;
+use Mango::BSON qw/ bson_ts /;
 
 sub changeName{
 	my ($self) = @_;
