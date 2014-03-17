@@ -20,7 +20,7 @@ sub startup {
   $r->get('/')->to('example#welcome');
   $r->route('/changeName')->via('GET', 'POST')->to('ChangeName#changeName');
   $r->route('/summary')->via('GET', 'POST')->to('Summary#summary');
-  $r->route('/update')->via(controller => 'Update', action => 'update');
+  $r->route('/update')->via('GET')->to('Update#update');
   $r->route('/consentToAct')->via('GET', 'POST')->to('ConsentToAct#consentToAct');
 }
 
