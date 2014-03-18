@@ -9,92 +9,65 @@ sub consentToAct{
 
 	if ($self->req->method eq 'POST'){
 		$self->render_later;
+	
+		#Setting values from user input on webpage
 
-		$self->session(
-			birthplace => $self->param('birthplace'),
-			phone => $self->param('phone'),
-			passport => $self->param('passport'),
-			nin => $self->param('nin'),
-			maiden => $self->param('maiden'),
-			eye => $self->param('eye'),
-			father => $self->param('father')
-		);
-		
-		my $birthplace = $self->session('birthplace');
-		my $phone = $self->session('phone');
-		my $passport = $self->session('passport');
-		my $nin = $self->session('nin');
-		my $maiden = $self->session('maiden');
-		my $eye = $self->session('eye');
-		my $father = $self->session('father');
+		my $birth = $self->param('birth');
+		my $phone = $self->param('phone');
+		my $passport = $self->param('passport');
+		my $nin = $self->param('nin');
+		my $maiden = $self->param('maiden');
+		my $eye = $self->param('eye');
+		my $father = $self->param('father');
 		my $id = $self->session->{id};
 		my $count = 0;
 
-		print $id;
+		#Validating user input details
 
-		if (defined($birthplace) && length($birthplace) == 3){
+		if (defined($birth) && length($birth) == 3){
 			my $result = $self->db->collection('Companies')->find_one({_id => $id}, {cta => 'true'})->{'cta'}->{'birth'};
-						
-			if($result eq $birthplace){
-				$count ++;
-				print $count;
-			}
+							
+			$count = &check($result, $birth, $count);
 		}
 
 		if (defined($phone) && length($phone) == 3){
-			my $result = $self->db->collection('Companies')->find_one({_id => $id}, {cta => 'true'})->{'cta'}->{'birth'};
+			my $result = $self->db->collection('Companies')->find_one({_id => $id}, {cta => 'true'})->{'cta'}->{'phone'};
 			
-			if($result eq $birthplace){
-				$count ++;
-			}
+			$count = &check($result, $phone, $count);
 		}
 
 		if (defined($passport) && length($passport) == 3){
 			my $result = $self->db->collection('Companies')->find_one({_id => $id}, {cta => 'true'})->{'cta'}->{'passport'};
 			
-			if($result eq $passport){
-				$count ++;
-			}
+			$count = &check($result, $passport, $count);
 		}
 
 		if (defined($nin) && length($nin) == 3){
 			my $result = $self->db->collection('Companies')->find_one({_id => $id}, {cta => 'true'})->{'cta'}->{'nin'};
 			
-			if($result eq $nin){
-				$count ++;
-			}
+			$count = &check($result, $nin, $count);
 		}
 
 		if (defined($maiden) && length($maiden) == 3 ){
 			my $result = $self->db->collection('Companies')->find_one({_id => $id}, {cta => 'true'})->{'cta'}->{'maiden'};
 			
-			if($result eq $maiden){
-				$count ++;
-			}
+			$count = &check($result, $maiden, $count);
 		}
 
 		if (defined($eye) && length($eye) == 3 ){
 			my $result = $self->db->collection('Companies')->find_one({_id => $id}, {cta => 'true'})->{'cta'}->{'eye'};
 			
-			if($result eq $eye){
-				$count ++;
-			}
+			$count = &check($result, $eye, $count);
 		}
 
 		if (defined($father) && length($father) == 3 ){
 			my $result = $self->db->collection('Companies')->find_one({_id => $id}, {cta => 'true'})->{'cta'}->{'father'};
 			
-			if($result eq $father){
-				$count ++;
-			}
+			$count = &check($result, $father, $count);
 		}
-		
-		
-		#$check=consentToActValidate();	
 
-		#$self->helper check =>	sub{ state $check = ConsentToActValidate-> new};
-
-		print $count;		
+		#Verifying the user has correctly inputted 3 security questions - if
+		#successful user will be redirected to summary page		
 		
 		if($count == 3){
 			$self->redirect_to('update');
@@ -104,7 +77,10 @@ sub consentToAct{
 	}
 }
 
-sub findField{
-	
+sub check{
+	if($_[0] eq $_[1]){
+		$_[2] ++;
+	}
+	return $_[2];
 }
 1;
