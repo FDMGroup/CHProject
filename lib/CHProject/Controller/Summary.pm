@@ -1,42 +1,82 @@
 package CHProject::Controller::Summary;
 use Mojo::Base 'Mojolicious::Controller';
-use Mango;
-use Mango::BSON qw\ bson_ts \;
+use CHProject::Common::Logo;
+use CHProject::Common::TescoLogo;
+use CHProject::Common::EELogo;
+use CHProject::Common::DominosLogo;
+use Mojo::IOLoop;
+use Data::Dumper;
+use Carp;
 
 sub summary{
+	#Delay render until called, get value of ID and create delay
 	my $self = shift;
+	$self->render_later;
 	my $id = $self->session->{id};
-	my $oldname = $self->session->{oldname};
-	my $newname = $self->session->{newname};
+	my $delay = Mojo::IOLoop->delay;
+	
+	$delay->steps(
+		#Concurrent requests
+		sub {
+			my $delay = shift;
 
-	#Update the Company Document
-	$self->db->collection('Companies')->update(
-		{ _id => $id },
-		{ '$set' => { "company name" => $newname } },
+			#Create feed objects
+			my $feed1 = new CHProject::Common::Logo;
+			my $feed2 = new CHProject::Common::TescoLogo;
+			my $feed3 = new CHProject::Common::EELogo;
+			my $feed4 = new CHProject::Common::DominosLogo;
+
+			#Non-blocking requests
+			my $end1 = $delay->begin;
+			$self->ua->get($feed1->url, 
+				sub { 
+					shift; 
+					$end1->(0, feed1 => $feed1, logo => shift); 
+				});
+
+			my $end2 = $delay->begin;
+			$self->ua->get($feed2->url, 
+				sub {
+					shift;
+					$end2->(0, feed2 => $feed2, tescoLogo => shift);
+				});
+			
+			my $end3 = $delay->begin;
+			$self->ua->get($feed3->url, 
+				sub {
+					shift;
+					$end3->(0, feed3 => $feed3, eeLogo => shift);
+				});
+			
+			my $end4 = $delay->begin;
+			$self->ua->get($feed4->url,
+				sub {
+					shift;
+					$end4->(0, feed4 => $feed4, dominosLogo => shift);
+				});
+		},
+
+		#Delayed rendering
+		sub {
+			my $delay = shift;
+			my $arg = {@_};
+
+			$arg->{feed1}->convert($arg->{logo});
+			$arg->{feed2}->convert($arg->{tescoLogo});
+			$arg->{feed3}->convert($arg->{eeLogo});
+			$arg->{feed4}->convert($arg->{dominosLogo});
+
+			#Define Companies House Logo
+			$self->session(logo => $arg->{feed1}->url);
+
+			#Only define relevant Company Logo
+			if( $id eq '2') {$self->session(companyLogo => $arg->{feed2}->url);}
+			if( $id eq '5') {$self->session(companyLogo => $arg->{feed3}->url);}
+			if( $id eq '1') {$self->session(companyLogo => $arg->{feed4}->url);}
+
+			$self->render("summary/summary");
+		},
 	);
-
-	#Add Change Record
-	$self->db->collection('Changes')->insert(
-		{ 'company id' => $id,
-		  'old name' => $oldname,
-		  'updated name' => $newname,
-		  'time' => bson_ts(time) }
-	);
-
-	my $doc = $self->db->collection('Changes')->find_one(
-		{ 'company id' => $id,
-		  'updated name' => $newname }
-	);
-
-	$self->session(
-		changeid => $doc->{'_id'},
-		oldname => $doc->{'old name'},
-		newname => $doc->{'updated name'},
-		id => $id
-	);
-
-	$self->render("summary/summary");
-
 }
 
 1;

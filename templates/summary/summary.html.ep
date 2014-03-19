@@ -7,6 +7,8 @@
 
 		<p class = "lead"><span class = "glyphicon glyphicon-ok"></span></p>
 		
+		<div> <img src="<%= session("logo") %>" alt="Companies House" height="100" width="100">	</div>
+		
 		<p>You have registered a change!</p>
 
 		<p> Change ID: <%= session("changeid") %></p>
@@ -17,4 +19,6 @@
 		<p> You have changed the name to: <%= session("newname") %></p>
 		<p> These changes have been made to our Company Register as well as a record of the specific change saved. </p>
 	</div>
+	
+	<div> <img src="<%= session("companyLogo") %>" alt="Company Logo" height="100" width="200"> </div>
 </div>

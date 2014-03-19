@@ -14,12 +14,11 @@ sub startup {
   # Router
   my $r = $self->routes;
 
-  $self->helper( db => \&helper_mango );
-
   # Normal route to controller
   $r->get('/')->to('example#welcome');
   $r->route('/changeName')->via('GET', 'POST')->to('ChangeName#changeName');
   $r->route('/summary')->via('GET', 'POST')->to('Summary#summary');
+  $r->get('/update')->to('Update#update');
   $r->route('/consentToAct')->via('GET', 'POST')->to('ConsentToAct#consentToAct');
 }
 
