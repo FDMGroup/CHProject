@@ -4,6 +4,7 @@ use Mango;
 use Mango::BSON qw\ bson_ts \;
 
 sub update{
+	#Locally define session variables
 	my $self = shift;
 	my $id = $self->session->{id};
 	my $oldname = $self->session->{oldname};
@@ -23,6 +24,7 @@ sub update{
 		  'time' => bson_ts(time) }
 	);
 
+	#Get company info as stored in the change record, display this data
 	my $doc = $self->db->collection('Changes')->find_one(
 		{ 'company id' => $id,
 		  'updated name' => $newname }

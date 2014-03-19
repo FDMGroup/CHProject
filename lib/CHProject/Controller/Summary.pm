@@ -9,20 +9,24 @@ use Data::Dumper;
 use Carp;
 
 sub summary{
+	#Delay render until called, get value of ID and create delay
 	my $self = shift;
 	$self->render_later;
 	my $id = $self->session->{id};
 	my $delay = Mojo::IOLoop->delay;
 	
 	$delay->steps(
+		#Concurrent requests
 		sub {
 			my $delay = shift;
 
+			#Create feed objects
 			my $feed1 = new CHProject::Common::Logo;
 			my $feed2 = new CHProject::Common::TescoLogo;
 			my $feed3 = new CHProject::Common::EELogo;
 			my $feed4 = new CHProject::Common::DominosLogo;
 
+			#Non-blocking requests
 			my $end1 = $delay->begin;
 			$self->ua->get($feed1->url, 
 				sub { 
@@ -52,6 +56,7 @@ sub summary{
 				});
 		},
 
+		#Delayed rendering
 		sub {
 			my $delay = shift;
 			my $arg = {@_};
@@ -61,26 +66,17 @@ sub summary{
 			$arg->{feed3}->convert($arg->{eeLogo});
 			$arg->{feed4}->convert($arg->{dominosLogo});
 
-			$self->session(
-				logo => $arg->{feed1}->url,
-				tescoLogo => $arg->{feed2}->url,
-				eeLogo => $arg->{feed3}->url,
-				dominosLogo => $arg->{feed4}->url
-			);
+			#Define Companies House Logo
+			$self->session(logo => $arg->{feed1}->url);
 
+			#Only define relevant Company Logo
 			if( $id eq '2') {$self->session(companyLogo => $arg->{feed2}->url);}
 			if( $id eq '5') {$self->session(companyLogo => $arg->{feed3}->url);}
 			if( $id eq '1') {$self->session(companyLogo => $arg->{feed4}->url);}
 
-			$self->renderer;
+			$self->render("summary/summary");
 		},
 	);
-}
-
-
-sub renderer {
-	my $self = shift;
-	$self->render("summary/summary");
 }
 
 1;

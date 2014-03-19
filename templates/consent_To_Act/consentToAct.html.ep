@@ -11,7 +11,7 @@
 
 	<p><form role="form" method="post">
 		<div class="form-group">
-			<label for="birthplace">Town of Birth (first 3 letters only)</label>
+			<label for="birth">Town of Birth (first 3 letters only)</label>
 			<input type="text" name="birth" id="birth" class="form-control"></input>
 		</div>			
 
