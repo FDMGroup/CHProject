@@ -70,9 +70,9 @@ sub summary{
 			$self->session(logo => $arg->{feed1}->url);
 
 			#Only define relevant Company Logo
-			if( $id eq '2') {$self->session(companyLogo => $arg->{feed2}->url);}
-			if( $id eq '5') {$self->session(companyLogo => $arg->{feed3}->url);}
-			if( $id eq '1') {$self->session(companyLogo => $arg->{feed4}->url);}
+			if( $id eq '2') {$self->stash(companyLogo => $arg->{feed2}->url);}
+			if( $id eq '5') {$self->stash(companyLogo => $arg->{feed3}->url);}
+			if( $id eq '1') {$self->stash(companyLogo => $arg->{feed4}->url);}
 
 			$self->render("summary/summary");
 		},

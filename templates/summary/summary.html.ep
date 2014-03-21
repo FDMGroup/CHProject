@@ -20,5 +20,5 @@
 		<p> These changes have been made to our Company Register as well as a record of the specific change saved. </p>
 	</div>
 	
-	<div> <img src="<%= session("companyLogo") %>" alt="Company Logo" height="100" width="200"> </div>
+	<div> <img src="<%= stash("companyLogo") %>" alt="Company Logo goes here." height="100" width="200"> </div>
 </div>
