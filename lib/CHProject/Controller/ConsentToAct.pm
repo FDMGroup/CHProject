@@ -24,12 +24,12 @@ sub consentToAct{
 		my @keys = keys %fields;
 		my $id = $self->session->{id};
 		my $count = 0;
+		my $ctadoc = $self->db->collection('Companies'->find_one({_id => $id}, {cta => 'true'});
 
 		#Validating user input details
 		for (my $i = 0; $i < 7; $i++){
 			if (defined($fields{$keys[$i]}) && length($fields{$keys[$i]}) == 3){
-				my $result = $self->db->collection('Companies')->find_one(
-					{ _id => $id}, {cta => 'true'})->{'cta'}->{$keys[$i]};
+				my $result = $ctadoc->{'cta'}->{$keys[$i]};
 				my $field = $fields{$keys[$i]};
 				
 				#Calling subroutine &check to validate user input to value stored in database '$result'							
