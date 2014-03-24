@@ -29,11 +29,11 @@ sub consentToAct{
 		#Validating user input details
 		for (my $i = 0; $i < 7; $i++){
 			if (defined($fields{$keys[$i]}) && length($fields{$keys[$i]}) == 3){
-				my $result = $ctadoc->{'cta'}->{$keys[$i]};
-				my $field = $fields{$keys[$i]};
+				my $dbvalue = $ctadoc->{'cta'}->{$keys[$i]};
+				my $uservalue = $fields{$keys[$i]};
 				
 				#Calling subroutine &check to validate user input to value stored in database '$result'							
-				$count = &check($result, $field}, $count);
+				$count = &check($dbvalue, $uservalue, $count);
 			}
 		}
 		
@@ -49,8 +49,8 @@ sub consentToAct{
 }
 
 sub check{
-	my ($result, $field, $count) = @_;
-	if($result eq $field){
+	my ($dbvalue, $uservalue, $count) = @_;
+	if($dbvalue eq $uservalue){
 		$count ++;
 	}
 	return $count;
