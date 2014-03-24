@@ -12,6 +12,12 @@ sub summary{
 	#Delay render until called, get value of ID and create delay
 	my $self = shift;
 	$self->render_later;
+
+	#Database Helpers - Update the name, add a change log and call that change
+	$self->updatename;
+	$self->addchange;
+	$self->findchange;
+
 	my $id = $self->session->{id};
 	my $delay = Mojo::IOLoop->delay;
 	
