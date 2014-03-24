@@ -24,7 +24,7 @@ sub consentToAct{
 		my @keys = keys %fields;
 		my $id = $self->session->{id};
 		my $count = 0;
-		my $ctadoc = $self->db->collection('Companies'->find_one({_id => $id}, {cta => 'true'});
+		my $ctadoc = $self->db->collection('Companies')->find_one({_id => $id}, {cta => 'true'});
 
 		#Validating user input details
 		for (my $i = 0; $i < 7; $i++){
