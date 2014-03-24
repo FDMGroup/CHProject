@@ -40,7 +40,7 @@ sub consentToAct{
 		#Verifying the user has correctly inputted 3 security questions - if
 		#successful user will be redirected to summary page		
 		if($count == 3){
-			$self->redirect_to('update');
+			$self->redirect_to('summary');
 		} else {
 			#TODO Error message on redirect
 			$self->redirect_to('consentToAct');

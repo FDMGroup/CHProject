@@ -1,5 +1,6 @@
 package CHProject;
 use Mojo::Base 'Mojolicious';
+use Mojolicious::Plugins;
 use Mango;
 
 # This method will run once at server start
@@ -9,6 +10,7 @@ sub startup {
 
   # Documentation browser under "/perldoc"
   $self->plugin('PODRenderer');
+  $self->plugin('Helpers');
   $self->helper( db => \&helper_mango );
 
   # Router
