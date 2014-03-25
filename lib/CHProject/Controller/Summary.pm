@@ -19,71 +19,27 @@ sub summary{
 	$self->findchange;
 
 	my $id = $self->session->{id};
-	my $delay = Mojo::IOLoop->delay;
-	
-	$delay->steps(
-		#Concurrent requests
-		sub {
-			my $delay = shift;
+	my @logos = ('Logo', 'TescoLogo', 'EELogo', 'DominosLogo');
 
-			#Create feed objects
-			my $feed1 = new CHProject::Common::Logo;
-			my $feed2 = new CHProject::Common::TescoLogo;
-			my $feed3 = new CHProject::Common::EELogo;
-			my $feed4 = new CHProject::Common::DominosLogo;
+	my $delay = Mojo::IOLoop->delay( sub {
+		$self->render('summary/summary');
+	});
 
-			#Non-blocking requests
-			my $end1 = $delay->begin;
-			$self->ua->get($feed1->url, 
-				sub { 
-					shift; 
-					$end1->(0, feed1 => $feed1, logo => shift); 
-				});
+	foreach my $logo (@logos) {
+		my $object = 'CHProject::Common::' . $logo;
+		my $feed = new $object;
 
-			my $end2 = $delay->begin;
-			$self->ua->get($feed2->url, 
-				sub {
-					shift;
-					$end2->(0, feed2 => $feed2, tescoLogo => shift);
-				});
-			
-			my $end3 = $delay->begin;
-			$self->ua->get($feed3->url, 
-				sub {
-					shift;
-					$end3->(0, feed3 => $feed3, eeLogo => shift);
-				});
-			
-			my $end4 = $delay->begin;
-			$self->ua->get($feed4->url,
-				sub {
-					shift;
-					$end4->(0, feed4 => $feed4, dominosLogo => shift);
-				});
-		},
+		my $end = $delay->begin;
+		$self->ua->get($feed->url, sub {
+			shift;
+			$end->(0, feed => $feed, logo => shift);
+		});
 
-		#Delayed rendering
-		sub {
-			my $delay = shift;
-			my $arg = {@_};
-
-			$arg->{feed1}->convert($arg->{logo});
-			$arg->{feed2}->convert($arg->{tescoLogo});
-			$arg->{feed3}->convert($arg->{eeLogo});
-			$arg->{feed4}->convert($arg->{dominosLogo});
-
-			#Define Companies House Logo
-			$self->session(logo => $arg->{feed1}->url);
-
-			#Only define relevant Company Logo
-			if( $id eq '2') {$self->stash(companyLogo => $arg->{feed2}->url);}
-			if( $id eq '5') {$self->stash(companyLogo => $arg->{feed3}->url);}
-			if( $id eq '1') {$self->stash(companyLogo => $arg->{feed4}->url);}
-
-			$self->render("summary/summary");
-		},
-	);
+		if($logo eq 'Logo'){$self->stash(logo => $feed->url);}
+		if($id eq '1' && $logo eq 'DominosLogo'){$self->stash(companyLogo => $feed->url);}
+		if($id eq '2' && $logo eq 'TescoLogo'){$self->stash(companyLogo => $feed->url);}
+		if($id eq '5' && $logo eq 'EELogo'){$self->stash(companyLogo=> $feed->url);}
+	}
 }
 
 1;
-
