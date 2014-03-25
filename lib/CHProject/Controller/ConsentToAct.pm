@@ -32,8 +32,8 @@ sub consentToAct{
 				my $dbvalue = $ctadoc->{'cta'}->{$keys[$i]};
 				my $uservalue = $fields{$keys[$i]};
 				
-				#Calling subroutine &check to validate user input to value stored in database '$result'							
-				$count = &check($dbvalue, $uservalue, $count);
+				#Calling method 'check' to validate user input to value stored in database '$result'							
+				$count += $self->check($dbvalue, $uservalue);
 			}
 		}
 		
@@ -49,10 +49,10 @@ sub consentToAct{
 }
 
 sub check{
-	my ($dbvalue, $uservalue, $count) = @_;
+	my ($self, $dbvalue, $uservalue) = @_;
 	if($dbvalue eq $uservalue){
-		$count ++;
+	    return 1;
 	}
-	return $count;
+	return 0;
 }
 1;
