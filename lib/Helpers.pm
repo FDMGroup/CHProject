@@ -39,6 +39,13 @@ sub register {
 			newname => $doc->{'updated name'}
 		);
 	});
+	
+	#Get Logo class
+	$app->helpers( getlogo => sub {
+		my $self = shift;
+		return $self->db->collection('Logos')->find_one(
+			{ '_id' => $self->session->{id} })->{'class'};
+	});
 }
 
 1;
