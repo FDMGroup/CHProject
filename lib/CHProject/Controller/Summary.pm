@@ -12,72 +12,38 @@ sub summary{
 	#Delay render until called, get value of ID and create delay
 	my $self = shift;
 	$self->render_later;
+
+	#Database Helpers - Update the name, add a change log and call that change
+	$self->updatename;
+	$self->addchange;
+	$self->findchange;
+
+	#Call the database to get Logo Class
 	my $id = $self->session->{id};
-	my $delay = Mojo::IOLoop->delay;
-	
-	$delay->steps(
-		#Concurrent requests
-		sub {
-			my $delay = shift;
+	my $class = $self->getlogo;
 
-			#Create feed objects
-			my $feed1 = new CHProject::Common::Logo;
-			my $feed2 = new CHProject::Common::TescoLogo;
-			my $feed3 = new CHProject::Common::EELogo;
-			my $feed4 = new CHProject::Common::DominosLogo;
+	#Define array with Companies House logo, add Company Logo if it exists
+	my @logos = ('Logo');
+	if(defined($class)){ @logos = ('Logo', $class); }
 
-			#Non-blocking requests
-			my $end1 = $delay->begin;
-			$self->ua->get($feed1->url, 
-				sub { 
-					shift; 
-					$end1->(0, feed1 => $feed1, logo => shift); 
-				});
+	my $delay = Mojo::IOLoop->delay( sub {
+		$self->render('summary/summary');
+	});
 
-			my $end2 = $delay->begin;
-			$self->ua->get($feed2->url, 
-				sub {
-					shift;
-					$end2->(0, feed2 => $feed2, tescoLogo => shift);
-				});
-			
-			my $end3 = $delay->begin;
-			$self->ua->get($feed3->url, 
-				sub {
-					shift;
-					$end3->(0, feed3 => $feed3, eeLogo => shift);
-				});
-			
-			my $end4 = $delay->begin;
-			$self->ua->get($feed4->url,
-				sub {
-					shift;
-					$end4->(0, feed4 => $feed4, dominosLogo => shift);
-				});
-		},
+	#Create the Logo object, nonblocking call to its url, save to the template
+	foreach my $logo (@logos) {
+		my $object = 'CHProject::Common::' . $logo;
+		my $feed = new $object;
 
-		#Delayed rendering
-		sub {
-			my $delay = shift;
-			my $arg = {@_};
+		my $end = $delay->begin;
+		$self->ua->get($feed->url, sub {
+			shift;
+			$end->(0, feed => $feed, logo => shift);
+		});
 
-			$arg->{feed1}->convert($arg->{logo});
-			$arg->{feed2}->convert($arg->{tescoLogo});
-			$arg->{feed3}->convert($arg->{eeLogo});
-			$arg->{feed4}->convert($arg->{dominosLogo});
-
-			#Define Companies House Logo
-			$self->session(logo => $arg->{feed1}->url);
-
-			#Only define relevant Company Logo
-			if( $id eq '2') {$self->stash(companyLogo => $arg->{feed2}->url);}
-			if( $id eq '5') {$self->stash(companyLogo => $arg->{feed3}->url);}
-			if( $id eq '1') {$self->stash(companyLogo => $arg->{feed4}->url);}
-
-			$self->render("summary/summary");
-		},
-	);
+		if($logo eq 'Logo'){$self->session(logo => $feed->url);}
+		else{ $self->stash(companyLogo=> $feed->url); }
+	}
 }
 
 1;
-

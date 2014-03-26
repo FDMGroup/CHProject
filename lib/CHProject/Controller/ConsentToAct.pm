@@ -24,22 +24,23 @@ sub consentToAct{
 		my @keys = keys %fields;
 		my $id = $self->session->{id};
 		my $count = 0;
+		my $ctadoc = $self->db->collection('Companies')->find_one({_id => $id}, {cta => 'true'});
 
 		#Validating user input details
 		for (my $i = 0; $i < 7; $i++){
 			if (defined($fields{$keys[$i]}) && length($fields{$keys[$i]}) == 3){
-				my $result = $self->db->collection('Companies')->find_one(
-					{ _id => $id}, {cta => 'true'})->{'cta'}->{$keys[$i]};
+				my $dbvalue = $ctadoc->{'cta'}->{$keys[$i]};
+				my $uservalue = $fields{$keys[$i]};
 				
-				#Calling subroutine &check to validate user input to value stored in database '$result'							
-				$count = &check($result, $fields{$keys[$i]}, $count);
+				#Calling method 'check' to validate user input to value stored in database '$result'							
+				$count += $self->check($dbvalue, $uservalue);
 			}
 		}
 		
 		#Verifying the user has correctly inputted 3 security questions - if
 		#successful user will be redirected to summary page		
 		if($count == 3){
-			$self->redirect_to('update');
+			$self->redirect_to('summary');
 		} else {
 			#TODO Error message on redirect
 			$self->redirect_to('consentToAct');
@@ -48,9 +49,10 @@ sub consentToAct{
 }
 
 sub check{
-	if($_[0] eq $_[1]){
-		$_[2] ++;
+	my ($self, $dbvalue, $uservalue) = @_;
+	if($dbvalue eq $uservalue){
+	    return 1;
 	}
-	return $_[2];
+	return 0;
 }
 1;
