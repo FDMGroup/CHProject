@@ -8,10 +8,14 @@ sub register {
 	
 	#Update the Company Document
 	$app->helper( updatename => sub {
-		my $self = shift;
+        my ($self, $callback) = @_;
 		$self->db->collection('Companies')->update(
 			{ _id => $self->session->{id} },
-			{ '$set' => { 'company name' => $self->session->{newname} } },
+			{ '$set' => { 'company name' => $self->session->{newname} } }
+            => sub {
+                my ($mango, $error, $doc) = @_;
+                $callback->($error, $doc);
+            }
 		);
 	});
 
